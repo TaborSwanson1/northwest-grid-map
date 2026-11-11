@@ -22,7 +22,14 @@ BBOX = {"xmin": -125.0, "ymin": 41.9, "xmax": -116.4, "ymax": 49.1}
 EIA860 = "https://www.eia.gov/electricity/data/eia860/xls/eia8602025.zip"
 CENSUS_POP = ("https://www2.census.gov/programs-surveys/popest/datasets/"
               "2020-2025/counties/totals/co-est2025-alldata.csv")
-CENSUS_STATES = "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_5m.zip"
+# EIA-861 (2025, final): sales, customers, peak demand and outages for every utility.
+EIA861 = "https://www.eia.gov/electricity/data/eia861/zip/f8612025.zip"
+EIA861_FILES = ["Sales_Ult_Cust_2025.xlsx", "Operational_Data_2025.xlsx",
+                "Reliability_2025.xlsx", "Service_Territory_2025.xlsx"]
+# Census city (incorporated place) population estimates, 2025, Oregon (41) and Washington (53).
+CENSUS_CITIES = ("https://www2.census.gov/programs-surveys/popest/datasets/"
+                 "2020-2025/cities/totals/sub-est2025_{fips}.csv")
+CENSUS_STATES ="https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_5m.zip"
 CENSUS_COUNTIES = "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_county_5m.zip"
 # HIFLD transmission lines, archived copy on ArcGIS Online (US government data, no longer updated).
 HIFLD_LINES = ("https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/"
@@ -152,8 +159,21 @@ def terrain():
     print(f"terrain z{z}: {len(todo)} tiles ({got} downloaded)")
 
 
+def eia861():
+    out = RAW / "eia861"
+    if not need(out / EIA861_FILES[0]):
+        return
+    z = zipfile.ZipFile(io.BytesIO(get(EIA861).content))
+    for name in EIA861_FILES:
+        (out / name).write_bytes(z.read(name))
+    print("saved eia861 sales, operational, reliability and service territory files")
+
+
 if __name__ == "__main__":
     eia860()
+    eia861()
+    for fips in ("41", "53"):
+        save_bytes(RAW / f"sub-est2025_{fips}.csv", CENSUS_CITIES.format(fips=fips))
     terrain()
     save_bytes(RAW / "co-est2025-alldata.csv", CENSUS_POP)
     save_bytes(RAW / "cb_2024_us_state_5m.zip", CENSUS_STATES)

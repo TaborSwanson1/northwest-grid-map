@@ -39,6 +39,7 @@ MUTED = "#5b636d"
 DC = "#7b2cbf"
 LINE500 = "#2b2d42"
 SPLIT = "#a0522d"
+PATH_WEST = "#b4471f"  # WECC paths over the Cascades, same as the web map
 OWNERS = [  # same as docs/index.html
     ("Other", "#8c8f94", "Everyone else"),
     ("Puget Sound Energy", "#d2ad57", "Puget Sound Energy"),
@@ -166,7 +167,7 @@ def main():
              fontsize=27, fontweight="bold", color=INK, va="top")
     fig.text(0.05, 0.918, "and uses it west of them.", fontsize=27, fontweight="bold", color=INK, va="top")
     fig.text(0.05, 0.878,
-             "Oregon and Washington power plants by owner, with the 500 kV lines that carry power over the mountains",
+             "Power plants by owner, with the two WECC paths that carry power over the mountains",
              fontsize=12.5, color=MUTED, va="top")
 
     # ---------- Map
@@ -191,6 +192,21 @@ def main():
     lines[(lines["cur"] == "AC") & (lines["vc"] == "500")].plot(ax=ax, color=LINE500, linewidth=1.5,
                                                                  zorder=5, alpha=0.85)
     lines[lines["cur"] == "DC"].plot(ax=ax, color=DC, linewidth=2.6, linestyle=(0, (3, 1.6)), zorder=6)
+
+    # WECC Paths 4 and 5 (West of Cascades North and South): a glow under their lines,
+    # and a badge with the name and rating where each crosses the county line.
+    wl = load("wecc_lines")
+    wl[wl["path"].isin([4, 5])].plot(ax=ax, color=PATH_WEST, linewidth=7, alpha=0.32, zorder=4.6,
+                                     capstyle="round", joinstyle="round")
+    badges = load("wecc_badges")
+    for b in badges[badges["path"].isin([4, 5])].itertuples():
+        ax.scatter(b.geometry.x, b.geometry.y, s=330, color=PATH_WEST, edgecolors="white",
+                   linewidths=1.8, zorder=11)
+        ax.text(b.geometry.x, b.geometry.y, str(b.path), fontsize=10.5, fontweight="bold",
+                color="white", ha="center", va="center", zorder=12)
+        ax.text(b.geometry.x + 26000, b.geometry.y, f"Path {b.path}: {b.name}\n{b.mw_a} MW east to west",
+                fontsize=10.5, fontweight="bold", color=PATH_WEST, va="center", zorder=12, linespacing=1.3,
+                bbox=dict(facecolor="white", alpha=0.85, edgecolor="none", pad=2.5))
 
     # Big faded side labels.
     for lon, lat, t in [(-123.55, 42.75, "WEST"), (-118.6, 43.35, "EAST")]:
@@ -248,7 +264,7 @@ def main():
         fig.text(x + 0.12, 0.119, "of power plant capacity", fontsize=13, color=MUTED, va="top")
 
     # ---------- Legend
-    lg = fig.add_axes([0.05, 0.04, 0.9, 0.045])
+    lg = fig.add_axes([0.05, 0.05, 0.9, 0.04])
     lg.set_axis_off()
     lg.set_xlim(0, 1)
     lg.set_ylim(0, 1)
@@ -269,11 +285,14 @@ def main():
     xx += 0.13
     lg.add_line(Line2D([xx, xx + 0.04], [0.15, 0.15], color=DC, lw=2.4, linestyle=(0, (3, 1.6))))
     lg.text(xx + 0.047, 0.15, "DC", fontsize=10.5, va="center")
+    xx += 0.09
+    lg.add_line(Line2D([xx, xx + 0.04], [0.15, 0.15], color=PATH_WEST, lw=7, alpha=0.4, solid_capstyle="round"))
+    lg.text(xx + 0.047, 0.15, "WECC path", fontsize=10.5, va="center")
 
-    fig.text(0.05, 0.012,
+    fig.text(0.05, 0.008,
              "Plants 10 MW and up, sized by nameplate capacity, colored by the parent owner of the biggest share. "
              "Sides of the Cascades are by county.\nSources: EIA-860 (2025), HIFLD and OpenStreetMap lines, "
-             "Census 2025 estimates, BPA, Natural Earth, AWS Terrain Tiles. github.com/TaborSwanson1/northwest-grid-map",
+             "Census 2025 estimates, BPA, WECC 2026 Path Rating Catalog, Natural Earth, AWS Terrain Tiles.\ngithub.com/TaborSwanson1/northwest-grid-map",
              fontsize=8.5, color=MUTED, va="bottom", linespacing=1.4)
 
     out = OUT / "poster.png"

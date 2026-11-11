@@ -16,6 +16,7 @@ cd src
 ../.venv/bin/python lines.py     # data/clean/lines.geojson, substations.geojson
 ../.venv/bin/python build_web.py # docs/data, the layers the web map loads
 ../.venv/bin/python wecc.py      # WECC paths traced onto the lines, plus badges
+../.venv/bin/python cities.py    # city cards: population and each city's utility (EIA-861)
 ../.venv/bin/python poster.py    # charts/poster.png
 ```
 
@@ -26,7 +27,8 @@ cd src
 | Power plants, owners | EIA-860, 2025 |
 | Transmission lines | HIFLD, archived copy (US government data, last checked 2014 to 2018) |
 | Newer lines, substations, cross-check | OpenStreetMap contributors, ODbL |
-| Population | Census Bureau county estimates, 2025 |
+| Population | Census Bureau county and city estimates, 2025 |
+| Utility customers, sales, peaks, outages | EIA-861, 2025 |
 | State and county boundaries | Census Bureau cartographic boundary files, 2024 |
 | Parent companies | One source per row in `data/reference/parents.csv` |
 | Transmission paths and ratings | WECC 2026 Path Rating Catalog, public version (V3, April 2026) |

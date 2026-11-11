@@ -1,0 +1,15 @@
+city,state,county,utility_number,utility,note
+Seattle,WA,King,16868,Seattle City Light,
+Portland,OR,Multnomah,15248,Portland General Electric,Pacific Power (PacifiCorp) serves part of northeast Portland.
+Tacoma,WA,Pierce,18429,Tacoma Power,
+Vancouver,WA,Clark,3660,Clark Public Utilities,
+Everett,WA,Snohomish,17470,Snohomish County PUD,
+Spokane,WA,Spokane,20169,Avista,
+Eugene,OR,Lane,6022,Eugene Water & Electric Board,
+Salem,OR,Marion,15248,Portland General Electric,
+Olympia,WA,Thurston,15500,Puget Sound Energy,
+Bremerton,WA,Kitsap,15500,Puget Sound Energy,
+Medford,OR,Jackson,14354,Pacific Power (PacifiCorp),
+Kennewick,WA,Benton,1579,Benton PUD,
+Bellingham,WA,Whatcom,15500,Puget Sound Energy,
+Yakima,WA,Yakima,14354,Pacific Power (PacifiCorp),

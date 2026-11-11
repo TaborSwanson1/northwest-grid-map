@@ -4,3 +4,4 @@ __pycache__/
 data/raw/eia860/
 *.zip
 data/raw/terrain/
+data/raw/eia861/
