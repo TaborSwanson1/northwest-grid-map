@@ -1,0 +1,8 @@
+path,name,group,dir_a,mw_a,dir_b,mw_b,revised,catalog_page,why
+3,Northwest to British Columbia,neighbor,North to south,"3,150",South to north,"3,000",January 2013,9,Ties BPA to BC Hydro at the Canadian border. Power can flow either way.
+4,West of Cascades North,west,East to west,"10,700",West to east,"10,700",January 2020,10,Carries power from Grand Coulee and the other Columbia dams over the mountains to Seattle and Puget Sound.
+5,West of Cascades South,west,East to west,"7,200",West to east,"7,200",January 2020,11,"Carries power from the Gorge west to Portland and the Willamette Valley. Most of the Gorge's wind, including Avangrid's, sits east of it."
+8,Montana to Northwest,neighbor,East to west,"2,200",West to east,"1,350",January 2013,14,Brings power from Montana into the Northwest. The lines that define it are farther east in Montana and Idaho; the badge marks where it heads into the map.
+14,Idaho to Northwest,neighbor,East to west,"2,400",West to east,"1,200 to 1,340 (by season)",March 2022,16,Ties the Northwest to Idaho. Includes the 500 kV line from Hemingway in Idaho to Summer Lake in Oregon.
+65,Pacific DC Intertie,south,North to south,"3,220",South to north,"3,100",February 2018,61,Sends Columbia power 846 miles to Sylmar near Los Angeles. It's DC and has no stops along the way.
+66,California-Oregon Intertie,south,North to south,"4,800",South to north,"3,675",not listed,62,Three 500 kV AC lines from southern Oregon into Northern California: two from Malin to Round Mountain and one from Captain Jack to Olinda.

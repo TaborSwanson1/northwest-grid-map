@@ -15,6 +15,7 @@ cd src
 ../.venv/bin/python plants.py    # data/clean/plants.csv, plant_owners.csv
 ../.venv/bin/python lines.py     # data/clean/lines.geojson, substations.geojson
 ../.venv/bin/python build_web.py # docs/data, the layers the web map loads
+../.venv/bin/python wecc.py      # WECC paths traced onto the lines, plus badges
 ../.venv/bin/python poster.py    # charts/poster.png
 ```
 
@@ -28,5 +29,6 @@ cd src
 | Population | Census Bureau county estimates, 2025 |
 | State and county boundaries | Census Bureau cartographic boundary files, 2024 |
 | Parent companies | One source per row in `data/reference/parents.csv` |
+| Transmission paths and ratings | WECC 2026 Path Rating Catalog, public version (V3, April 2026) |
 
 Daily notes are in `log.md`.

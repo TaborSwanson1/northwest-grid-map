@@ -1,0 +1,33 @@
+path,line,found,pieces,km
+3,Custer (BPA)–Ingledow (BCH) 500 kV line 1 & 2,True,1,36.3
+3,Boundary (BPA)–Waneta 230 kV (normally open),False,0,
+3,Boundary (BPA)–Nelway (BCH) 230 kV (normally closed),True,1,4.7
+4,Chief Joseph–Monroe 500 kV,True,1,196.6
+4,"Schultz–Raver 1, 3, 4 500 kV",True,1,124.8
+4,Chief Joe–Snohomish 345 kV lines 3 & 4,True,1,215.0
+4,Rocky Reach–Maple Valley 345 kV,True,1,208.0
+4,Grand Coulee–Olympia 230 kV,True,1,367.4
+4,Rocky Reach–Cascade 230 kV,True,1,92.5
+4,Bettas Road–Covington No. 1 230 kV,True,1,122.4
+4,Schultz–Echo Lake 500 kV,True,2,134.4
+5,Big Eddy–Ostrander 500 kV,True,1,115.0
+5,Ashe–Marion 500 kV,True,1,360.4
+5,Buckley–Marion 500 kV,True,1,159.9
+5,Knight–Ostrander 500 kV,False,0,
+5,John Day–Marion 500 kV,True,1,205.3
+5,McNary–Ross 345 kV,True,1,281.5
+5,Big Eddy–McLoughlin 230 kV,True,1,130.2
+5,Big Eddy–Chemawa 230 kV,True,1,187.4
+5,Midway–N. Bonneville 230 kV,True,3,216.9
+5,Jones Canyon–Santiam 230 kV,True,1,245.0
+5,Big Eddy–Troutdale 230 kV,True,1,124.8
+5,Round Butte–Bethel 230 kV,True,1,158.8
+8,Broadview–Garrison #1 & #2 500 kV (Montana),False,0,
+14,Hemingway–Summer Lake 500 kV,True,2,388.0
+14,Imnaha–Lolo 230 kV,False,0,
+14,Hells Canyon–Hurricane 230 kV,False,0,
+14,North Powder–LaGrande 230 kV,False,0,
+14,Hines–Harney 115 kV,False,0,
+65,Celilo to Sylmar 500 kV DC line,True,1,1365.7
+66,Malin to Round Mt. 500 kV (2 lines),True,3,
+66,Captain Jack–Olinda 500 kV line (COTP),True,1,

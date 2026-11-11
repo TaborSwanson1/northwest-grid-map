@@ -33,7 +33,7 @@
   .stat span { font-size: 12px; color: var(--muted); line-height: 1.3; display: block; }
   h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); margin: 14px 0 6px; }
   .rows { display: grid; gap: 3px; }
-  label.row { display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; padding: 2px 0; }
+  .row { display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; padding: 2px 0; }
   label.row input { margin: 0; accent-color: #444; }
   .row .note { margin-left: auto; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
   .swatch { width: 12px; height: 12px; border-radius: 50%; flex: none; }
@@ -60,6 +60,10 @@
   .maplibregl-popup-content { font-size: 13px; line-height: 1.4; padding: 10px 12px; border-radius: 8px; max-width: 280px; }
   .maplibregl-popup-content h3 { font-size: 14px; margin: 0 0 4px; }
   .maplibregl-popup-content .k { color: var(--muted); }
+  .tip .maplibregl-popup-content { padding: 6px 9px; font-size: 12px; pointer-events: none; }
+  .tip .maplibregl-popup-tip { display: none; }
+  ul.pathlines { margin: 4px 0 0; padding-left: 16px; font-size: 12px; color: var(--muted); }
+  details summary { cursor: pointer; margin-top: 2px; }
 
   @media (max-width: 700px) {
     #panel { top: auto; bottom: 0; left: 0; right: 0; width: auto; max-height: 55%; border-radius: 12px 12px 0 0; padding: 12px 16px; }
@@ -88,6 +92,12 @@
 
   <h2>Transmission lines</h2>
   <div class="rows" id="voltages"></div>
+
+  <h2>WECC transmission paths</h2>
+  <div class="rows">
+    <label class="row"><input type="checkbox" id="paths" checked> Show paths <span class="note">hover or click one</span></label>
+    <div id="pathgroups" class="rows" style="padding-left:2px"></div>
+  </div>
 
   <h2>Other layers</h2>
   <div class="rows">
@@ -132,6 +142,13 @@ const VOLTS = [
   ["100-161", "115 to 161 kV AC", "#8d91a3", 0.9, false, 100],
   ["UNDER 100", "Under 100 kV AC", "#aeb1bd", 0.6, false, 0],
 ];
+
+// WECC paths, grouped by where they carry power. Ratings come from WECC's 2026 catalog.
+const PATH_GROUPS = {
+  west: ["#b4471f", "Over the Cascades to Seattle and Portland"],
+  south: ["#7b2cbf", "South to California"],
+  neighbor: ["#1b7f9e", "To and from Canada, Idaho and Montana"],
+};
 
 // ---------- Icons: white shapes drawn on a canvas, used as SDF so the map can color them.
 function drawIcon(ctx, kind, s) {
@@ -218,6 +235,11 @@ for (const [vc, label, color, width, on] of VOLTS) {
     <span class="lineswatch" style="border-top:${Math.max(width, 1.5)}px ${dash} ${color}"></span>${label}`;
   voltEl.appendChild(l);
 }
+for (const [g, [color, label]] of Object.entries(PATH_GROUPS)) {
+  const d = document.createElement("div"); d.className = "row";
+  d.innerHTML = `<span class="lineswatch" style="border-top:7px solid ${color};opacity:.55;border-radius:4px"></span>${label}`;
+  document.getElementById("pathgroups").appendChild(d);
+}
 // Minimize or open the legend. Phones start minimized so the map shows first.
 const panel = document.getElementById("panel");
 const toggle = document.getElementById("toggle");
@@ -292,7 +314,7 @@ const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "
 
 // Start downloading the data right away, in parallel with the map style.
 const names = ["ocean", "lakes", "rivers", "borders", "outside", "counties", "cascade_split",
-               "cities", "plants", "lines", "dc_exit", "substations"];
+               "cities", "plants", "lines", "dc_exit", "substations", "wecc_lines", "wecc_badges"];
 const dataReady = Promise.all(names.map(async (n) =>
   [n, await (await fetch(`data/${n}.geojson`)).json()])).then(Object.fromEntries);
 
@@ -335,6 +357,17 @@ map.once("style.load", async () => {
   map.addLayer({ id: "split", type: "line", source: "cascade_split",
     paint: { "line-color": "#a0522d", "line-width": 1.6, "line-dasharray": [1, 2], "line-opacity": 0.8 } });
 
+  // WECC paths: a colored glow under the lines that make up each path.
+  const pathColor = ["match", ["get", "group"], ...Object.entries(PATH_GROUPS).flatMap(([g, [c]]) => [g, c]), "#888"];
+  map.addLayer({ id: "wecc-glow", type: "line", source: "wecc_lines",
+    layout: { "line-cap": "round", "line-join": "round" },
+    paint: { "line-color": pathColor, "line-opacity": 0.3, "line-blur": 1.5,
+             "line-width": ["interpolate", ["linear"], ["zoom"], 5, 7, 9, 16] } });
+  map.addLayer({ id: "wecc-glow-hi", type: "line", source: "wecc_lines", filter: ["==", ["get", "path"], -1],
+    layout: { "line-cap": "round", "line-join": "round" },
+    paint: { "line-color": pathColor, "line-opacity": 0.65, "line-blur": 1,
+             "line-width": ["interpolate", ["linear"], ["zoom"], 5, 9, 9, 20] } });
+
   map.addLayer({ id: "lines", type: "line", source: "lines",
     filter: ["in", ["get", "vc"], ["literal", VOLTS.filter((v) => v[4]).map((v) => v[0])]],
     layout: { "line-cap": "round", "line-join": "round" },
@@ -370,7 +403,7 @@ map.once("style.load", async () => {
 
   map.addLayer({ id: "dc-exit", type: "symbol", source: "dc_exit",
     layout: { "text-field": ["concat", "↓ ", ["get", "label"]], "text-font": ["Noto Sans Bold"],
-              "text-size": 12.5, "text-anchor": "top-left", "text-offset": [0.4, 0.4], "text-max-width": 11 },
+              "text-size": 12.5, "text-anchor": "top-left", "text-offset": [0.6, 1.3], "text-max-width": 11 },
     paint: { "text-color": "#7b2cbf", "text-halo-color": "#ffffff", "text-halo-width": 2 } });
 
   // A few place labels for the landscape.
@@ -382,6 +415,21 @@ map.once("style.load", async () => {
     layout: { "text-field": ["get", "t"], "text-font": ["Noto Sans Regular"], "text-size": 12,
               "text-rotate": ["get", "r"], "text-allow-overlap": true },
     paint: { "text-color": "#6b5b45", "text-halo-color": "rgba(255,255,255,0.8)", "text-halo-width": 1.5 } });
+
+  // WECC path badges: a numbered circle where each path crosses, with its name beside it.
+  map.addLayer({ id: "wecc-badge", type: "circle", source: "wecc_badges",
+    paint: { "circle-radius": 12, "circle-color": pathColor, "circle-stroke-color": "#fff", "circle-stroke-width": 2.2 } });
+  map.addLayer({ id: "wecc-num", type: "symbol", source: "wecc_badges",
+    layout: { "text-field": ["to-string", ["get", "path"]], "text-font": ["Noto Sans Bold"], "text-size": 11.5,
+              "text-allow-overlap": true, "text-ignore-placement": true },
+    paint: { "text-color": "#ffffff" } });
+  map.addLayer({ id: "wecc-name", type: "symbol", source: "wecc_badges",
+    layout: { "text-field": ["get", "name"], "text-font": ["Noto Sans Bold"], "text-size": 11.5,
+              // Path 66 sits just west of Path 65, so its name goes on the left side.
+              "text-anchor": ["case", ["==", ["get", "path"], 66], "right", "left"],
+              "text-offset": ["case", ["==", ["get", "path"], 66], ["literal", [-1.4, 0]], ["literal", [1.4, 0]]],
+              "text-justify": ["case", ["==", ["get", "path"], 66], "right", "left"], "text-max-width": 9 },
+    paint: { "text-color": pathColor, "text-halo-color": "#ffffff", "text-halo-width": 2 } });
 
   // ---------- Filters
   function applyFilters() {
@@ -399,6 +447,8 @@ map.once("style.load", async () => {
       document.getElementById("subs").checked && vcs.length ? "visible" : "none");
     map.setLayoutProperty("split", "visibility", document.getElementById("split").checked ? "visible" : "none");
     map.setLayoutProperty("pop", "visibility", document.getElementById("pop").checked ? "visible" : "none");
+    const paths = document.getElementById("paths").checked ? "visible" : "none";
+    for (const id of ["wecc-glow", "wecc-glow-hi", "wecc-badge", "wecc-num", "wecc-name"]) map.setLayoutProperty(id, "visibility", paths);
   }
   document.getElementById("panel").addEventListener("change", applyFilters);
   applyFilters();
@@ -415,7 +465,42 @@ map.once("style.load", async () => {
       <span class="k">Online:</span> ${esc(p.year)}<br>
       <span class="k">Where:</span> ${esc(p.county)} County, ${esc(p.state)} (${esc(p.side).toLowerCase()} side)`);
   });
+  // WECC paths: hover for a quick preview, click for the details.
+  const pathInfo = Object.fromEntries(data.wecc_badges.features.map((f) => [f.properties.path, f.properties]));
+  const pathTitle = (p) => `Path ${p.path}: ${esc(p.name)}`;
+  const tip = new maplibregl.Popup({ closeButton: false, closeOnClick: false, className: "tip", offset: 14 });
+  const pathAt = (e) => {
+    const hit = map.queryRenderedFeatures(e.point, { layers: ["wecc-badge", "wecc-glow"] });
+    return hit.length ? pathInfo[hit[0].properties.path] : null;
+  };
+  map.on("mousemove", (e) => {
+    const p = document.getElementById("paths").checked ? pathAt(e) : null;
+    map.setFilter("wecc-glow-hi", ["==", ["get", "path"], p ? p.path : -1]);
+    if (!p || map.queryRenderedFeatures(e.point, { layers: ["plants"] }).length) { tip.remove(); return; }
+    map.getCanvas().style.cursor = "pointer";
+    tip.setLngLat(e.lngLat).setHTML(`<b>${pathTitle(p)}</b><br>${esc(p.dir_a)}: <b>${esc(p.mw_a)} MW</b><br><span class="k">Click for details</span>`).addTo(map);
+  });
+  map.getCanvas().addEventListener("mouseleave", () => { tip.remove(); map.setFilter("wecc-glow-hi", ["==", ["get", "path"], -1]); });
+  map.on("click", (e) => {
+    if (!document.getElementById("paths").checked) return;
+    if (map.queryRenderedFeatures(e.point, { layers: ["plants", "substations"] }).length) return;
+    const p = pathAt(e);
+    if (!p) return;
+    tip.remove();
+    map.setFilter("wecc-glow-hi", ["==", ["get", "path"], p.path]);
+    const color = PATH_GROUPS[p.group][0];
+    const lines = p.lines.split("|").map((l) => `<li>${esc(l)}</li>`).join("");
+    popup(e.lngLat, `<h3 style="color:${color}">${pathTitle(p)}</h3>
+      <div class="k" style="margin-bottom:4px">${esc(PATH_GROUPS[p.group][1])}</div>
+      <b>WECC rating</b><br>${esc(p.dir_a)}: <b>${esc(p.mw_a)} MW</b><br>${esc(p.dir_b)}: <b>${esc(p.mw_b)} MW</b>
+      <p style="margin:6px 0">${esc(p.why)}</p>
+      <details><summary class="k">Lines WECC counts in this path (${esc(p.traced)} shown on the map)</summary><ul class="pathlines">${lines}</ul></details>
+      <div class="k" style="margin-top:4px">Source: WECC 2026 Path Rating Catalog, public version, p. ${esc(p.catalog_page)}${p.revised !== "not listed" ? ` (revised ${esc(p.revised)})` : ""}</div>`)
+      .on("close", () => map.setFilter("wecc-glow-hi", ["==", ["get", "path"], -1]));
+  });
+
   map.on("click", "line-hit", (e) => {
+    if (document.getElementById("paths").checked && pathAt(e)) return;  // the path popup wins
     if (map.queryRenderedFeatures(e.point, { layers: ["plants", "substations"] }).length) return;
     const p = e.features[0].properties;
     const v = p.cur === "DC" ? "±500 kV DC" : (p.kv ? `${fmt(p.kv)} kV AC` : `${p.vc} kV AC`);
@@ -432,7 +517,7 @@ map.once("style.load", async () => {
       <span class="k">Source:</span> OpenStreetMap`);
   });
   map.on("click", "pop", (e) => {
-    if (map.queryRenderedFeatures(e.point, { layers: ["plants", "substations", "line-hit"] }).length) return;
+    if (map.queryRenderedFeatures(e.point, { layers: ["plants", "substations", "line-hit", "wecc-badge", "wecc-glow"] }).length) return;
     const p = e.features[0].properties;
     popup(e.lngLat, `<h3>${esc(p.name)}</h3>${fmt(p.pop)} people (2025)<br>${fmt(p.density)} per square mile<br>${esc(p.side)} of the Cascades`);
   });
