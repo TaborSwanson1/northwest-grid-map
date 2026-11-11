@@ -1,0 +1,470 @@
+plant_code,type,owner,parent,mw
+99.0,Gas,Puget Sound Energy Inc,Puget Sound Energy,177.8
+371.0,Nuclear,Energy Northwest- Columbia,Energy Northwest- Columbia,1200.0
+550.0,Gas,Avista Corp,Avista Corp,7.2
+550.0,Other,Avista Corp,Avista Corp,50.7
+607.0,Gas,Puget Sound Energy Inc,Puget Sound Energy,376.0
+622.0,Hydro,City of Seattle - (WA),City of Seattle - (WA),16.8
+3013.0,Hydro,Idaho Power Co,Idaho Power Co,411.1
+3014.0,Hydro,Idaho Power Co,Idaho Power Co,190.0
+3020.0,Hydro,PacifiCorp,PacifiCorp,15.0
+3021.0,Hydro,PacifiCorp,PacifiCorp,26.0
+3024.0,Hydro,PacifiCorp,PacifiCorp,2.8
+3025.0,Hydro,PacifiCorp,PacifiCorp,3.2
+3026.0,Hydro,PacifiCorp,PacifiCorp,11.0
+3029.0,Hydro,PacifiCorp,PacifiCorp,32.0
+3032.0,Hydro,PacifiCorp,PacifiCorp,3.8
+3033.0,Hydro,PacifiCorp,PacifiCorp,32.0
+3034.0,Hydro,PacifiCorp,PacifiCorp,7.2
+3035.0,Hydro,PacifiCorp,PacifiCorp,1.0
+3036.0,Hydro,PacifiCorp,PacifiCorp,18.0
+3037.0,Hydro,PacifiCorp,PacifiCorp,11.0
+3040.0,Hydro,PacifiCorp,PacifiCorp,42.6
+3041.0,Hydro,PacifiCorp,PacifiCorp,1.1
+3045.0,Hydro,Portland General Electric Co,Portland General Electric,37.2
+3047.0,Hydro,Portland General Electric Co,Portland General Electric,40.8
+3048.0,Hydro,Portland General Electric Co,Portland General Electric,55.0
+3048.0,Hydro,Warm Springs Power Enterprises,Warm Springs Power Enterprises,54.8
+3049.0,Hydro,Portland General Electric Co,Portland General Electric,18.8
+3050.0,Hydro,Portland General Electric Co,Portland General Electric,186.6
+3050.0,Hydro,Warm Springs Power Enterprises,Warm Springs Power Enterprises,185.9
+3053.0,Hydro,Portland General Electric Co,Portland General Electric,15.4
+3067.0,Hydro,Eugene Water & Electric Board,Eugene Water & Electric Board,114.3
+3071.0,Hydro,Eugene Water & Electric Board,Eugene Water & Electric Board,8.0
+3074.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,18.0
+3075.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,1162.0
+3076.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,26.0
+3077.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,100.0
+3078.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,15.0
+3080.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,80.0
+3081.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,30.0
+3082.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,2160.0
+3083.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,120.0
+3084.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,990.5
+3845.0,Coal,TransAlta Centralia Gen LLC,TransAlta Centralia Gen LLC,729.9
+3847.0,Hydro,PacifiCorp,PacifiCorp,136.0
+3850.0,Hydro,PacifiCorp,PacifiCorp,240.0
+3852.0,Hydro,PacifiCorp,PacifiCorp,134.0
+3853.0,Other,Puget Sound Energy Inc,Puget Sound Energy,2.7
+3854.0,Hydro,Electron Hydro LLC,Electron Hydro LLC,22.8
+3855.0,Hydro,Puget Sound Energy Inc,Puget Sound Energy,103.9
+3860.0,Hydro,Puget Sound Energy Inc,Puget Sound Energy,12.8
+3861.0,Hydro,Puget Sound Energy Inc,Puget Sound Energy,104.8
+3866.0,Hydro,Avista Corp,Avista Corp,43.2
+3867.0,Hydro,Avista Corp,Avista Corp,70.0
+3868.0,Hydro,Hydro Technology Systems Inc,Hydro Technology Systems Inc,1.8
+3869.0,Hydro,Avista Corp,Avista Corp,37.6
+3878.0,Hydro,City of Centralia - (WA),City of Centralia - (WA),12.0
+3883.0,Hydro,PUD No 1 of Chelan County - (WA),PUD No 1 of Chelan County - (WA),1349.2
+3886.0,Hydro,PUD No 1 of Douglas County - (WA),PUD No 1 of Douglas County - (WA),866.8
+3887.0,Hydro,PUD No 2 of Grant County - (WA),PUD No 2 of Grant County - (WA),950.0
+3888.0,Hydro,PUD No 2 of Grant County - (WA),PUD No 2 of Grant County - (WA),1220.0
+3891.0,Hydro,PUD No 1 of Pend Oreille County - (WA),PUD No 1 of Pend Oreille County - (WA),90.0
+3895.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,1819.7
+3913.0,Hydro,City of Tacoma - (WA),City of Tacoma - (WA),51.0
+3914.0,Hydro,City of Tacoma - (WA),City of Tacoma - (WA),50.4
+3915.0,Hydro,City of Tacoma - (WA),City of Tacoma - (WA),84.6
+3916.0,Hydro,City of Tacoma - (WA),City of Tacoma - (WA),64.0
+3917.0,Hydro,City of Tacoma - (WA),City of Tacoma - (WA),162.0
+3918.0,Hydro,City of Tacoma - (WA),City of Tacoma - (WA),300.0
+3921.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,2456.2
+3925.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,603.0
+3926.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,810.0
+3927.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,810.0
+3929.0,Hydro,Energy Northwest - Packwood,Energy Northwest - Packwood,27.5
+4213.0,Hydro,City of Portland (OR),City of Portland (OR),23.7
+4214.0,Hydro,City of Portland (OR),City of Portland (OR),11.8
+6120.0,Gas,Puget Sound Energy Inc,Puget Sound Energy,169.2
+6163.0,Hydro,U S Bureau of Reclamation,U S Bureau of Reclamation,6495.0
+6163.0,Pumped storage,U S Bureau of Reclamation,U S Bureau of Reclamation,314.0
+6174.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,49.0
+6175.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,810.0
+6200.0,Hydro,PUD No 1 of Chelan County - (WA),PUD No 1 of Chelan County - (WA),629.4
+6202.0,Hydro,City of Seattle - (WA),City of Seattle - (WA),450.0
+6210.0,Gas,Avista Corp,Avista Corp,61.8
+6265.0,Hydro,PUD No 1 of Cowlitz County,PUD No 1 of Cowlitz County,72.0
+6403.0,Hydro,U S Bureau of Reclamation,U S Bureau of Reclamation,17.2
+6406.0,Hydro,U S Bureau of Reclamation,U S Bureau of Reclamation,12.0
+6407.0,Hydro,U S Bureau of Reclamation,U S Bureau of Reclamation,12.9
+6421.0,Hydro,PacifiCorp,PacifiCorp,43.7
+6424.0,Hydro,PUD No 1 of Chelan County - (WA),PUD No 1 of Chelan County - (WA),59.2
+6430.0,Hydro,City of Seattle - (WA),City of Seattle - (WA),30.0
+6431.0,Hydro,City of Seattle - (WA),City of Seattle - (WA),207.3
+6432.0,Hydro,City of Seattle - (WA),City of Seattle - (WA),182.4
+6433.0,Hydro,City of Seattle - (WA),City of Seattle - (WA),1159.7
+6484.0,Hydro,PacifiCorp,PacifiCorp,1.1
+6505.0,Hydro,Portland General Electric Co,Portland General Electric,51.0
+6507.0,Hydro,Yakama Power,Yakama Power,2.5
+6508.0,Hydro,Yakama Power,Yakama Power,1.6
+6552.0,Hydro,USACE Northwestern Division,USACE Northwestern Division,20.0
+7127.0,Hydro,City of Tacoma - (WA),City of Tacoma - (WA),12.8
+7259.0,Hydro,TransAlta Centralia Gen LLC,TransAlta Centralia Gen LLC,1.0
+7350.0,Gas,Portland General Electric Co,Portland General Electric,296.0
+7413.0,Other,Emerald People's Utility Dist,Emerald People's Utility Dist,3.2
+7427.0,Hydro,PUD No 1 of Lewis County - (WA),PUD No 1 of Lewis County - (WA),70.0
+7431.0,Hydro,Northern Wasco County PUD - (OR),Northern Wasco County PUD - (OR),6.5
+7508.0,Hydro,Eugene Water & Electric Board,Eugene Water & Electric Board,12.0
+7511.0,Hydro,Northern Wasco County PUD - (OR),Northern Wasco County PUD - (OR),5.0
+7511.0,Hydro,PUD No 1 of Klickitat County,PUD No 1 of Klickitat County,5.0
+7588.0,Hydro,PUD No 1 of Snohomish County - (WA),PUD No 1 of Snohomish County - (WA),111.8
+7605.0,Gas,PUD No 1 of Clark County - (WA),PUD No 1 of Clark County - (WA),248.0
+7725.0,Other,Pacific Northwest Generating Coop,Pacific Northwest Generating Coop,5.6
+7867.0,Hydro,Puget Sound Energy Inc,Puget Sound Energy,38.7
+7870.0,Gas,Puget Sound Energy Inc,Puget Sound Energy,176.4
+7931.0,Gas,Avista Corp,Avista Corp,287.0
+7936.0,Wind,Energy Northwest,Energy Northwest,95.9
+7999.0,Gas,Invenergy Services LLC,Invenergy,714.9
+8022.0,Gas,Avista Corp,Avista Corp,24.6
+8073.0,Gas,Portland General Electric Co,Portland General Electric,610.7
+9095.0,Hydro,Avista Corp,Avista Corp,14.8
+9096.0,Hydro,Avista Corp,Avista Corp,10.0
+9842.0,Hydro,City of Seattle - (WA),City of Seattle - (WA),2.3
+10323.0,Hydro,Farmer's Irrigation District,Farmer's Irrigation District,2.6
+10324.0,Hydro,Farmer's Irrigation District,Farmer's Irrigation District,1.8
+10737.0,Hydro,Sprague Hydro LLC,Sprague Hydro LLC,1.2
+10869.0,Other,Biomass One LP,Biomass One LP,40.0
+50091.0,Hydro,Sheep Creek Hydro Inc,Sheep Creek Hydro Inc,1.6
+50185.0,Other,Cosmo Specialty Fibers,Cosmo Specialty Fibers,15.0
+50187.0,Other,Nippon Dynawave Packaging Co.,Nippon Dynawave Packaging Co.,62.4
+50191.0,Other,Eugene Water & Electric Board,Eugene Water & Electric Board,32.7
+50228.0,Hydro,Rocky Brook Electric Inc,Rocky Brook Electric Inc,1.6
+50329.0,Other,King County Dept-Natural Res - (WA),King County Dept-Natural Res - (WA),4.6
+50360.0,Hydro,Owyhee Irrigation District,Owyhee Irrigation District,2.0
+50361.0,Hydro,Owyhee Irrigation District,Owyhee Irrigation District,5.0
+50362.0,Hydro,Owyhee Irrigation District,Owyhee Irrigation District,8.5
+50380.0,Hydro,City of Spokane - (WA),City of Spokane - (WA),17.6
+50382.0,Hydro,City of Walla Walla - (WA),City of Walla Walla - (WA),2.2
+50396.0,Other,Roseburg Forest Products Co,Roseburg Forest Products Co,51.5
+50421.0,Hydro,Yakima-Tieton Irrigation Dist,Yakima-Tieton Irrigation Dist,1.6
+50423.0,Hydro,Yakima-Tieton Irrigation Dist,Yakima-Tieton Irrigation Dist,1.7
+50544.0,Other,Port Townsend Paper Co,Port Townsend Paper Co,7.5
+50700.0,Hydro,William G. Reed Jr,William G. Reed Jr,1.4
+50827.0,Hydro,"Central Rivers Power US, LLC","Central Rivers Power US, LLC",11.9
+50827.0,Hydro,"Enel North America, Inc.","Enel North America, Inc.",11.9
+50827.0,Hydro,South Fork Resources Inc,South Fork Resources Inc,0.2
+50886.0,Other,City of Spokane - (WA),City of Spokane - (WA),26.0
+50917.0,Hydro,Middle Fork Irrigation Dist,Middle Fork Irrigation Dist,3.3
+50921.0,Other,Co-Generation Co,Co-Generation Co,7.5
+50938.0,Hydro,Douglas County - (OR),Douglas County - (OR),1.6
+50980.0,Hydro,Central Oregon Irrigation Dist,Central Oregon Irrigation Dist,5.4
+50993.0,Other,Co-Gen II,Co-Gen II,7.5
+52155.0,Hydro,Lacomb Irrigation Dist,Lacomb Irrigation Dist,1.0
+52187.0,Hydro,Falls Creek Hydroelectric Project LP,Falls Creek Hydroelectric Project LP,4.1
+54251.0,Hydro,Deschutes Valley Water District,Deschutes Valley Water District,4.3
+54267.0,Hydro,Koma Kulshan Associates,Koma Kulshan Associates,12.0
+54268.0,Gas,HF Sinclair Corporation,HF Sinclair Corporation,139.8
+54387.0,Hydro,"South Fork II Associates, LP","South Fork II Associates, LP",4.3
+54476.0,Gas,Puget Sound Energy Inc,Puget Sound Energy,125.5
+54537.0,Gas,Puget Sound Energy Inc,Puget Sound Energy,285.5
+54562.0,Other,Longview Fibre Co,Longview Fibre Co,45.0
+54721.0,Hydro,Warm Springs Power Enterprises,Warm Springs Power Enterprises,19.6
+54761.0,Gas,Hermiston Generating Co LP,Hermiston Generating Co LP,310.6
+54761.0,Gas,PacifiCorp,PacifiCorp,310.6
+54809.0,Gas,University of Washington,University of Washington,3.0
+54809.0,Other,University of Washington,University of Washington,12.0
+54860.0,Hydro,Black Creek Hydro Inc,Black Creek Hydro Inc,3.7
+54950.0,Gas,University of Oregon,University of Oregon,11.0
+54950.0,Other,University of Oregon,University of Oregon,6.6
+55103.0,Gas,Avangrid Power LLC,Avangrid,501.5
+55125.0,Wind,ESI Vansycle Partners LP,ESI Vansycle Partners LP,25.0
+55328.0,Gas,Hermiston Power Partnership,Hermiston Power Partnership,689.4
+55482.0,Gas,Puget Sound Energy Inc,Puget Sound Energy,302.8
+55544.0,Gas,Avangrid Power LLC,Avangrid,117.6
+55560.0,Wind,FPL Energy Vansycle LLC,NextEra Energy Resources,176.9
+55662.0,Gas,PacifiCorp,PacifiCorp,593.3
+55700.0,Gas,Puget Sound Energy Inc,Puget Sound Energy,319.0
+55739.0,Wind,ALLETE Clean Energy,ALLETE Clean Energy,49.8
+55818.0,Gas,Capital Power Corporation,Capital Power Corporation,159.6
+55818.0,Gas,Puget Sound Energy Inc,Puget Sound Energy,158.7
+55871.0,Wind,Avangrid Power LLC,Avangrid,24.5
+55882.0,Other,Sierra Pacific Industries,Sierra Pacific Industries,18.0
+55989.0,Wind,FPL Energy Vansycle LLC,NextEra Energy Resources,122.8
+56016.0,Gas,Washington State University,Washington State University,2.2
+56016.0,Other,Washington State University,Washington State University,1.8
+56192.0,Other,Georgia-Pacific Wauna LLC,Georgia-Pacific Wauna LLC,30.0
+56193.0,Other,Boise Cascade Wood Products LLC,Boise Cascade Wood Products LLC,8.5
+56195.0,Wind,Eurus Combine Hills I LLC,Eurus Combine Hills I LLC,43.0
+56227.0,Gas,Portland General Electric Co,Portland General Electric,483.0
+56255.0,Wind,Puget Sound Energy Inc,Puget Sound Energy,156.6
+56322.0,Solar,Puget Sound Energy Inc,Puget Sound Energy,0.5
+56322.0,Wind,Puget Sound Energy Inc,Puget Sound Energy,272.6
+56359.0,Wind,Avangrid Power LLC,Avangrid,75.0
+56360.0,Wind,PacifiCorp,PacifiCorp,110.4
+56361.0,Wind,Avangrid Power LLC,Avangrid,199.0
+56406.0,Other,Sierra Pacific Industries,Sierra Pacific Industries,28.0
+56461.0,Other,Oregon Environmental Industries LLC,Oregon Environmental Industries LLC,3.2
+56466.0,Wind,PacifiCorp,PacifiCorp,234.0
+56468.0,Wind,Avangrid Power LLC,Avangrid,297.5
+56485.0,Wind,Portland General Electric Co,Portland General Electric,449.7
+56487.0,Wind,White Creek Wind 1 LLC,White Creek Wind 1 LLC,204.0
+56623.0,Wind,Telocaset Wind Power Partners,EDP Renewables,100.7
+56666.0,Wind,PacifiCorp,PacifiCorp,103.4
+56694.0,Hydro,East Columbia Basin Irr Dist,East Columbia Basin Irr Dist,2.0
+56694.0,Hydro,Quincy-Columbia Basin Irr Dist,Quincy-Columbia Basin Irr Dist,2.0
+56694.0,Hydro,South Columbia Basin Irr Dist,South Columbia Basin Irr Dist,2.0
+56695.0,Hydro,East Columbia Basin Irr Dist,East Columbia Basin Irr Dist,30.7
+56695.0,Hydro,Quincy-Columbia Basin Irr Dist,Quincy-Columbia Basin Irr Dist,30.7
+56695.0,Hydro,South Columbia Basin Irr Dist,South Columbia Basin Irr Dist,30.7
+56696.0,Hydro,East Columbia Basin Irr Dist,East Columbia Basin Irr Dist,0.7
+56696.0,Hydro,Quincy-Columbia Basin Irr Dist,Quincy-Columbia Basin Irr Dist,0.7
+56696.0,Hydro,South Columbia Basin Irr Dist,South Columbia Basin Irr Dist,0.7
+56697.0,Hydro,East Columbia Basin Irr Dist,East Columbia Basin Irr Dist,0.8
+56697.0,Hydro,Quincy-Columbia Basin Irr Dist,Quincy-Columbia Basin Irr Dist,0.8
+56697.0,Hydro,South Columbia Basin Irr Dist,South Columbia Basin Irr Dist,0.8
+56698.0,Hydro,East Columbia Basin Irr Dist,East Columbia Basin Irr Dist,8.9
+56698.0,Hydro,Quincy-Columbia Basin Irr Dist,Quincy-Columbia Basin Irr Dist,8.9
+56698.0,Hydro,South Columbia Basin Irr Dist,South Columbia Basin Irr Dist,8.9
+56702.0,Wind,Washington Wind LLC,Washington Wind LLC,136.3
+56781.0,Other,Evergreen BioPower LLC,Evergreen BioPower LLC,21.0
+56789.0,Wind,Avangrid Power LLC,Avangrid,98.7
+56790.0,Wind,Avangrid Power LLC,Avangrid,100.8
+56854.0,Wind,Wheat Field Wind Power Project LLC,EDP Renewables,102.9
+56855.0,Wind,Arlington Wind Power Project LLC,EDP Renewables,102.9
+56858.0,Wind,"Sagebrush Power Partners, LLC",EDP Renewables,100.7
+56932.0,Other,Washington State University,Washington State University,1.0
+56933.0,Wind,"Threemile Canyon Wind I, LLC","Threemile Canyon Wind I, LLC",9.9
+56952.0,Wind,Invenergy Services LLC,Invenergy,72.0
+56967.0,Wind,"Butter Creek Power, LLC","Butter Creek Power, LLC",5.0
+56968.0,Wind,"Big Top, LLC","Big Top, LLC",1.7
+56969.0,Wind,Echo 2,Echo 2,8.0
+56970.0,Wind,Echo 2,Echo 2,10.0
+56971.0,Wind,Echo 1,Echo 1,9.9
+56972.0,Wind,Echo 1,Echo 1,8.3
+56973.0,Wind,Echo 1,Echo 1,9.9
+56974.0,Wind,"Wagon Trail, LLC","Wagon Trail, LLC",3.3
+56975.0,Wind,Echo 1,Echo 1,6.6
+57015.0,Other,WM Renewable Energy LLC,WM Renewable Energy LLC,12.8
+57019.0,Other,WM Renewable Energy LLC,WM Renewable Energy LLC,4.8
+57096.0,Wind,Avangrid Power LLC,Avangrid,98.7
+57137.0,Wind,Eurus Combine Hills II LLC,Eurus Combine Hills II LLC,66.1
+57152.0,Wind,Harvest Wind Project TIC,Harvest Wind Project TIC,98.9
+57159.0,Wind,Windy Flats Partners LLC,Windy Flats Partners LLC,262.2
+57188.0,Wind,Invenergy Services LLC,Invenergy,90.0
+57195.0,Wind,Puget Sound Energy Inc,Puget Sound Energy,342.7
+57298.0,Other,King County Solid Waste Division,King County Solid Waste Division,5.4
+57319.0,Wind,Avangrid Power LLC,Avangrid,50.0
+57320.0,Wind,Avangrid Power LLC,Avangrid,151.2
+57333.0,Wind,Avangrid Power LLC,Avangrid,199.2
+57372.0,Solar,enXco Development Corporation,enXco Development Corporation,1.6
+57437.0,Hydro,Central Oregon Irrigation Dist,Central Oregon Irrigation Dist,5.0
+57457.0,Other,Seneca Sustainable Energy LLC,Seneca Sustainable Energy LLC,19.8
+57496.0,Hydro,Southern California P P A,Southern California P P A,13.8
+57526.0,Wind,Shepherds Flat Wind LLC,Brookfield Renewable,265.0
+57530.0,Wind,Onward Energy,Onward Energy,105.3
+57549.0,Wind,Shepherds Flat Wind LLC,Brookfield Renewable,290.0
+57550.0,Wind,Shepherds Flat Wind LLC,Brookfield Renewable,290.0
+57578.0,Wind,PaTu Wind Farm LLC,PaTu Wind Farm LLC,9.0
+57635.0,Wind,Southern California P P A,Southern California P P A,50.0
+57652.0,Solar,Standard Solar,Standard Solar,1.0
+57653.0,Gas,Oregon State University,Oregon State University,5.5
+57756.0,Wind,Coastal Community Action Program,Coastal Community Action Program,6.0
+57763.0,Hydro,PUD No 1 of Snohomish County - (WA),PUD No 1 of Snohomish County - (WA),7.5
+57803.0,Wind,Lime Wind LLC,Lime Wind LLC,3.0
+57882.0,Solar,Portland General Electric Co,Portland General Electric,1.4
+57911.0,Other,Roseburg LFG Energy LLC,Roseburg LFG Energy LLC,1.6
+57969.0,Other,Hampton Lumber Mills - Washington Inc,Hampton Lumber Mills - Washington Inc,4.5
+58022.0,Other,USG Oregon LLC,USG Oregon LLC,33.0
+58099.0,Wind,Avangrid Power LLC,Avangrid,200.0
+58109.0,Other,Georgia-Pacific Toledo LLC,Georgia-Pacific Toledo LLC,18.8
+58131.0,Solar,"Outback Solar, LLC","Outback Solar, LLC",4.4
+58150.0,Solar,PacifiCorp,PacifiCorp,2.0
+58266.0,Gas,Portland General Electric Co,Portland General Electric,225.6
+58324.0,Wind,FPL Energy Stateline II Inc,NextEra Energy Resources,102.3
+58352.0,Other,McKinley Paper Co. - Washington Mill,McKinley Paper Co. - Washington Mill,12.6
+58382.0,Gas,"TMF-RIG, LLC","TMF-RIG, LLC",4.8
+58441.0,Wind,Gamesa Wind US LLC,Gamesa Wind US LLC,4.3
+58455.0,Hydro,EBD Hydro LLC,EBD Hydro LLC,3.0
+58470.0,Hydro,C-Drop,C-Drop,1.1
+58503.0,Gas,Portland General Electric Co,Portland General Electric,500.0
+58571.0,Wind,Portland General Electric Co,Portland General Electric,266.8
+58591.0,Other,"Tillamook BioGas, LLC Digester ","Tillamook BioGas, LLC Digester ",1.0
+58687.0,Other,Finley BioEnergy LLC,Finley BioEnergy LLC,4.8
+58688.0,Other,Frontier Operation Services,Frontier Operation Services,4.5
+58696.0,Hydro,Puget Sound Hydro LLC,Puget Sound Hydro LLC,1.5
+58961.0,Solar,Tesla Inc.,Tesla Inc.,1.7
+59076.0,Wind,"Chopin Wind, LLC","Chopin Wind, LLC",10.0
+59357.0,Hydro,"Dorena Hydro, LLC","Dorena Hydro, LLC",7.5
+59374.0,Solar,Old Mill Solar,Old Mill Solar,5.0
+59382.0,Other,Surprise Valley Electrification,Surprise Valley Electrification,3.7
+59490.0,Wind,Jett Creek,Jett Creek,10.0
+59491.0,Wind,Benson Creek,Benson Creek,10.0
+59492.0,Wind,Durbin Creek,Durbin Creek,10.0
+59493.0,Wind,Prospector,Prospector,10.0
+59494.0,Wind,Willow Spring,Willow Spring,10.0
+59704.0,Other,Equilon Enterprises LLC d/b/a Shell Oil,Equilon Enterprises LLC d/b/a Shell Oil,1.6
+59790.0,Solar,Tesla Inc.,Tesla Inc.,1.2
+60057.0,Solar,Steel Bridge Solar. LLC,Steel Bridge Solar. LLC,2.3
+60112.0,Solar,Tesla Inc.,Tesla Inc.,1.4
+60263.0,Other,Clean Water Services,Clean Water Services,1.6
+60330.0,Solar,Cypress Creek Renewables,Cypress Creek Renewables,6.0
+60331.0,Solar,Cypress Creek Renewables,Cypress Creek Renewables,9.0
+60332.0,Solar,Cypress Creek Renewables,Cypress Creek Renewables,10.0
+60333.0,Solar,Cypress Creek Renewables,Cypress Creek Renewables,4.5
+60334.0,Solar,Cypress Creek Renewables,Cypress Creek Renewables,10.0
+60335.0,Solar,Cypress Creek Renewables,Cypress Creek Renewables,10.0
+60418.0,Hydro,PUD No 1 of Snohomish County - (WA),PUD No 1 of Snohomish County - (WA),6.0
+60444.0,Batteries,Puget Sound Energy Inc,Puget Sound Energy,2.0
+60517.0,Hydro,PUD No 1 of Snohomish County - (WA),PUD No 1 of Snohomish County - (WA),6.0
+60548.0,Solar,Cypress Creek Renewables,Cypress Creek Renewables,9.9
+60616.0,Solar,BC Solar,BC Solar,8.0
+60868.0,Hydro,Portland General Electric Co,Portland General Electric,1.2
+60976.0,Solar,SunStrong Management,SunStrong Management,9.9
+61048.0,Solar,Avangrid Power LLC,Avangrid,56.3
+61200.0,Solar,"OR Solar 2, LLC","OR Solar 2, LLC",10.0
+61201.0,Solar,"Heelstone Energy Holdings, LLC","Heelstone Energy Holdings, LLC",10.0
+61281.0,Solar,"GCL New Energy, Inc.","GCL New Energy, Inc.",10.0
+61338.0,Solar,SunStrong Management,SunStrong Management,2.2
+61345.0,Solar,Avangrid Power LLC,Avangrid,10.0
+61423.0,Solar,"Heelstone Energy Holdings, LLC","Heelstone Energy Holdings, LLC",8.0
+61424.0,Solar,"Heelstone Energy Holdings, LLC","Heelstone Energy Holdings, LLC",10.0
+61430.0,Solar,"Heelstone Energy Holdings, LLC","Heelstone Energy Holdings, LLC",10.0
+61496.0,Solar,"GCL New Energy, Inc.","GCL New Energy, Inc.",10.0
+61497.0,Solar,"GCL New Energy, Inc.","GCL New Energy, Inc.",10.0
+61553.0,Solar,Live Oak Banking Company,Live Oak Banking Company,2.9
+61559.0,Solar,SunStrong Management,SunStrong Management,8.0
+61560.0,Solar,SunStrong Management,SunStrong Management,9.9
+61580.0,Solar,"Heelstone Energy Holdings, LLC","Heelstone Energy Holdings, LLC",9.9
+61631.0,Solar,"Heelstone Energy Holdings, LLC","Heelstone Energy Holdings, LLC",9.9
+61761.0,Other,Douglas County Forest Products - (OR),Douglas County Forest Products - (OR),6.3
+61827.0,Solar,SunStrong Management,SunStrong Management,2.2
+61828.0,Solar,SunStrong Management,SunStrong Management,2.2
+61829.0,Solar,SunStrong Management,SunStrong Management,2.2
+61830.0,Solar,SunStrong Management,SunStrong Management,2.2
+61831.0,Solar,SunStrong Management,SunStrong Management,2.2
+61832.0,Solar,SunStrong Management,SunStrong Management,2.2
+61835.0,Solar,SunStrong Management,SunStrong Management,2.2
+61844.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",2.8
+61854.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",15.0
+61855.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",3.0
+61856.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",3.0
+61860.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",3.0
+61933.0,Solar,"Adams Nielson Solar, LLC","Adams Nielson Solar, LLC",19.2
+62067.0,Solar,"Altus Power America Management, LLC","Altus Power America Management, LLC",5.0
+62069.0,Solar,"Altus Power America Management, LLC","Altus Power America Management, LLC",5.0
+62071.0,Solar,"Altus Power America Management, LLC","Altus Power America Management, LLC",5.0
+62169.0,Solar,Boring Solar LLC,Boring Solar LLC,2.2
+62170.0,Solar,Ballston Solar LLC,Ballston Solar LLC,2.2
+62171.0,Solar,Labish Solar LLC,Labish Solar LLC,2.2
+62241.0,Solar,"NorWest Energy 9, LLC","NorWest Energy 9, LLC",6.0
+62268.0,Solar,"NorWest Energy 4, LLC","NorWest Energy 4, LLC",5.6
+62272.0,Solar,"GCL New Energy, Inc.","GCL New Energy, Inc.",8.0
+62560.0,Solar,Airport Solar LLC,Airport Solar LLC,47.3
+62745.0,Batteries,"Wheatridge Wind Holdings, LLC",NextEra Energy Resources,30.0
+62745.0,Solar,"Wheatridge Wind Holdings, LLC",NextEra Energy Resources,50.0
+62745.0,Wind,"Wheatridge Wind Holdings, LLC",NextEra Energy Resources,200.0
+62935.0,Wind,"Orchard Windfarm, LLC","Orchard Windfarm, LLC",10.0
+62936.0,Wind,"Rattlesnake Flat, LLC",Clearway Energy Group,144.0
+63049.0,Solar,Invenergy Services LLC,Invenergy,40.0
+63050.0,Solar,Invenergy Services LLC,Invenergy,70.0
+63205.0,Wind,"Skookumchuck Wind Energy Project, LLC",Southern Power,136.0
+63206.0,Solar,Rafael Solar LLC,Rafael Solar LLC,2.2
+63207.0,Solar,Case Creek Solar LLC,Case Creek Solar LLC,2.2
+63208.0,Solar,Kale Patch Solar LLC,Kale Patch Solar LLC,2.2
+63235.0,Solar,O'Neill Creek Solar LLC,O'Neill Creek Solar LLC,2.2
+63301.0,Solar,"Garrett Solar, LLC","Garrett Solar, LLC",10.0
+63330.0,Solar,Cardinal Renewables,Cardinal Renewables,10.0
+63331.0,Solar,Cardinal Renewables,Cardinal Renewables,10.0
+63344.0,Solar,"Starvation Solar I, LLC","Starvation Solar I, LLC",9.9
+63441.0,Solar,Avangrid Power LLC,Avangrid,162.0
+63442.0,Solar,"Tickle Creek Solar, LLC","Tickle Creek Solar, LLC",1.9
+63443.0,Solar,"Thomas Creek Solar, LLC","Thomas Creek Solar, LLC",2.2
+63456.0,Solar,"St Louis Solar, LLC","St Louis Solar, LLC",2.2
+63462.0,Solar,SunStrong Management,SunStrong Management,2.2
+63464.0,Solar,SunStrong Management,SunStrong Management,2.2
+63465.0,Solar,SunStrong Management,SunStrong Management,2.2
+63466.0,Solar,SunStrong Management,SunStrong Management,2.2
+63467.0,Solar,SunStrong Management,SunStrong Management,2.2
+63507.0,Solar,Avangrid Power LLC,Avangrid,60.0
+63509.0,Solar,Avangrid Power LLC,Avangrid,150.0
+63636.0,Solar,"Fort Rock Solar I, LLC","Fort Rock Solar I, LLC",9.9
+63642.0,Solar,"Dunn Road Solar, LLC","Dunn Road Solar, LLC",1.8
+63663.0,Solar,"Mt Hope Solar, LLC","Mt Hope Solar, LLC",2.5
+63664.0,Solar,"Williams Acres Solar, LLC","Williams Acres Solar, LLC",2.5
+63665.0,Solar,"River Valley Solar, LLC","River Valley Solar, LLC",1.9
+63694.0,Solar,SolRiver Capital LLC,SolRiver Capital LLC,4.0
+63710.0,Wind,Avangrid Power LLC,Avangrid,201.3
+63778.0,Solar,"SC Oregon 2 Lessor Parent, LLC","SC Oregon 2 Lessor Parent, LLC",10.0
+63779.0,Solar,"SC Oregon 2 Lessor Parent, LLC","SC Oregon 2 Lessor Parent, LLC",10.0
+63795.0,Solar,"SC Oregon 2 Lessor Parent, LLC","SC Oregon 2 Lessor Parent, LLC",10.0
+63796.0,Solar,"SC Oregon 2 Lessor Parent, LLC","SC Oregon 2 Lessor Parent, LLC",10.0
+63908.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",3.1
+63925.0,Solar,Riley Solar I LLC,Riley Solar I LLC,10.0
+63926.0,Solar,Fort Rock Solar IV LLC,Fort Rock Solar IV LLC,10.0
+63956.0,Solar,Greenbacker Renewable Energy Corporation,Greenbacker Renewable Energy Corporation,2.3
+63957.0,Solar,Greenbacker Renewable Energy Corporation,Greenbacker Renewable Energy Corporation,2.3
+63958.0,Solar,"Thor Solar 1 CEI, LLC","Thor Solar 1 CEI, LLC",2.0
+63959.0,Solar,"Thor Solar 1 CEI, LLC","Thor Solar 1 CEI, LLC",2.0
+63960.0,Solar,"Thor Solar 1 CEI, LLC","Thor Solar 1 CEI, LLC",2.0
+63961.0,Solar,"Thor Solar 1 CEI, LLC","Thor Solar 1 CEI, LLC",4.0
+63962.0,Solar,"Thor Solar 1 CEI, LLC","Thor Solar 1 CEI, LLC",2.0
+63963.0,Solar,"Thor Solar 1 CEI, LLC","Thor Solar 1 CEI, LLC",2.0
+63964.0,Solar,"Thor Solar 1 CEI, LLC","Thor Solar 1 CEI, LLC",2.0
+63969.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",3.0
+64006.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",3.0
+64007.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",3.0
+64008.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",3.0
+64009.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",3.0
+64022.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",3.0
+64033.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",1.3
+64034.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",2.2
+64048.0,Solar,"Adapture Renewables, Inc.","Adapture Renewables, Inc.",2.6
+64051.0,Wind,"Orchard Windfarm, LLC","Orchard Windfarm, LLC",10.0
+64052.0,Wind,"Orchard Windfarm, LLC","Orchard Windfarm, LLC",10.0
+64053.0,Wind,"Orchard Windfarm, LLC","Orchard Windfarm, LLC",10.0
+64057.0,Wind,Portland General Electric Co,Portland General Electric,100.0
+64198.0,Batteries,Energy Northwest,Energy Northwest,1.0
+64198.0,Solar,Tucci Energy Services,Tucci Energy Services,3.2
+64446.0,Batteries,PUD No 1 of Snohomish County - (WA),PUD No 1 of Snohomish County - (WA),1.0
+64446.0,Solar,PUD No 1 of Snohomish County - (WA),PUD No 1 of Snohomish County - (WA),0.5
+64663.0,Other,City of Salem Public Works - (OR),City of Salem Public Works - (OR),1.2
+64830.0,Solar,SunStrong Management,SunStrong Management,10.0
+64974.0,Solar,Avangrid Power LLC,Avangrid,151.7
+65228.0,Solar,"Red Prairie Solar, LLC","Red Prairie Solar, LLC",2.2
+65737.0,Wind,"Chopin Wind, LLC","Chopin Wind, LLC",8.0
+65745.0,Solar,"Carnes Creek Solar, LLC","Carnes Creek Solar, LLC",2.5
+65746.0,Solar,"Cosper Creek Solar, LLC","Cosper Creek Solar, LLC",2.5
+65747.0,Solar,"Fruitland Creek Solar, LLC","Fruitland Creek Solar, LLC",1.8
+65748.0,Solar,"Kaiser Creek Solar, LLC","Kaiser Creek Solar, LLC",2.0
+65749.0,Solar,"Linkville Solar, LLC","Linkville Solar, LLC",2.8
+65750.0,Solar,"Sandy River Solar, LLC","Sandy River Solar, LLC",1.9
+65751.0,Solar,"Sesqui-C Solar, LLC","Sesqui-C Solar, LLC",2.5
+66349.0,Solar,SolRiver Capital LLC,SolRiver Capital LLC,2.9
+66351.0,Solar,SolRiver Capital LLC,SolRiver Capital LLC,2.9
+66354.0,Solar,SolRiver Capital LLC,SolRiver Capital LLC,3.0
+66355.0,Solar,SolRiver Capital LLC,SolRiver Capital LLC,3.0
+66368.0,Solar,Standard Solar,Standard Solar,2.5
+66378.0,Solar,SolRiver Capital LLC,SolRiver Capital LLC,2.9
+66560.0,Wind,Wheatridge East Wind LLC,NextEra Energy Resources,200.0
+66942.0,Solar,Skysol Holdco LLC,Skysol Holdco LLC,61.2
+67261.0,Solar,Goose Prairie Solar LLC,Goose Prairie Solar LLC,80.0
+67698.0,Batteries,Portland General Electric Co,Portland General Electric,17.0
+67711.0,Batteries,Portland General Electric Co,Portland General Electric,200.0
+67712.0,Batteries,Portland General Electric Co,Portland General Electric,75.0
+67869.0,Batteries,"Troutdale Grid, LLC",NextEra Energy Resources,200.0
+67980.0,Solar,Mompano,Mompano,2.0
+68320.0,Solar,Blackwell Creek Solar LLC,Blackwell Creek Solar LLC,1.4
+68338.0,Solar,Verde Light Community Solar LLC,Verde Light Community Solar LLC,3.0
+68444.0,Solar,"Antelope Creek Solar, LLC","Antelope Creek Solar, LLC",2.3
+68445.0,Solar,"Gun Club Solar, LLC","Gun Club Solar, LLC",2.5
+68446.0,Solar,"Marquam Creek Solar, LLC","Marquam Creek Solar, LLC",1.9
+68448.0,Solar,"Clayfield Solar, LLC","Clayfield Solar, LLC",2.6
+68449.0,Solar,"Cork Solar, LLC","Cork Solar, LLC",1.3
+68450.0,Solar,"Dover Solar, LLC","Dover Solar, LLC",2.0
+68451.0,Solar,"Belvedere Solar, LLC","Belvedere Solar, LLC",3.0
+68462.0,Solar,Pine Grove Solar LLC,Pine Grove Solar LLC,1.4
+68463.0,Solar,Orchard Knob Solar LLC,Orchard Knob Solar LLC,2.3
+68464.0,Solar,Round Lake Solar LLC,Round Lake Solar LLC,1.0
+68508.0,Solar,Zena Solar LLC,Zena Solar LLC,2.5
+68550.0,Solar,"Kelly Creek Solar, LLC","Kelly Creek Solar, LLC",2.3
+68888.0,Solar,"Chapman Creek Solar, LLC","Chapman Creek Solar, LLC",3.0
+68904.0,Solar,"Buckner Creek Solar, LLC","Buckner Creek Solar, LLC",2.5
+68978.0,Solar,Sunset Ridge Solar LLC,Sunset Ridge Solar LLC,2.3
+69020.0,Solar,Waterford Solar LLC,Waterford Solar LLC,2.6
+69210.0,Batteries,Lineage Logistics Solar PV - Salem OR,Lineage Logistics Solar PV - Salem OR,1.0
+69210.0,Solar,Lineage Logistics Solar PV - Salem OR,Lineage Logistics Solar PV - Salem OR,1.1
+69408.0,Solar,"Burlingame Solar, LLC","Burlingame Solar, LLC",2.1
+69518.0,Solar,Pilot Rock Solar 1 LLC,Pilot Rock Solar 1 LLC,2.0
+69519.0,Solar,Pilot Rock Solar 2 LLC,Pilot Rock Solar 2 LLC,3.0
+69682.0,Solar,Bonneville Environmental Foundation (BEF),Bonneville Environmental Foundation (BEF),1.0
+70411.0,Solar,"KSI III Consolidated, LLC","KSI III Consolidated, LLC",2.3
+70413.0,Solar,"KSI III Consolidated, LLC","KSI III Consolidated, LLC",2.5

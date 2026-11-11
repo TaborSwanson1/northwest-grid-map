@@ -1,0 +1,453 @@
+plant_code,type,plant_name,state,county,side,lat,lon,operator,mw,generators,first_year,last_year,main_parent,main_parent_share
+6163.0,Hydro,Grand Coulee,WA,Grant,East,47.957511,-118.977323,U S Bureau of Reclamation,6495.0,27,1941.0,1980.0,U S Bureau of Reclamation,1.0
+3921.0,Hydro,Chief Joseph,WA,Douglas,East,47.9951,-119.6404,USACE Northwestern Division,2456.2,27,1955.0,1979.0,USACE Northwestern Division,1.0
+3082.0,Hydro,John Day,OR,Sherman,East,45.71644,-120.69408,USACE Northwestern Division,2160.0,16,1968.0,1971.0,USACE Northwestern Division,1.0
+3895.0,Hydro,The Dalles,OR,Wasco,East,45.614,-121.1346,USACE Northwestern Division,1819.7,24,1957.0,1973.0,USACE Northwestern Division,1.0
+3883.0,Hydro,Rocky Reach,WA,Chelan,East,47.533611,-120.295278,PUD No 1 of Chelan County - (WA),1349.2,11,1961.0,1974.0,PUD No 1 of Chelan County - (WA),1.0
+3888.0,Hydro,Wanapum,WA,Grant,East,46.8731,-119.9703,PUD No 2 of Grant County - (WA),1220.0,10,2011.0,2020.0,PUD No 2 of Grant County - (WA),1.0
+371.0,Nuclear,Columbia Generating Station,WA,Benton,East,46.4711,-119.3339,Energy Northwest- Columbia,1200.0,1,1984.0,1984.0,Energy Northwest- Columbia,1.0
+3075.0,Hydro,Bonneville,OR,Multnomah,West,45.6441,-121.941009,USACE Northwestern Division,1162.0,20,1938.0,1982.0,USACE Northwestern Division,1.0
+6433.0,Hydro,Boundary,WA,Pend Oreille,East,48.987111,-117.347847,City of Seattle - (WA),1159.7,6,1967.0,1986.0,City of Seattle - (WA),1.0
+3084.0,Hydro,McNary,OR,Umatilla,East,45.9402,-119.2988,USACE Northwestern Division,990.5,14,1953.0,1957.0,USACE Northwestern Division,1.0
+3887.0,Hydro,Priest Rapids,WA,Grant,East,46.6451,-119.908,PUD No 2 of Grant County - (WA),950.0,10,1959.0,1961.0,PUD No 2 of Grant County - (WA),1.0
+3886.0,Hydro,Wells,WA,Chelan,East,47.9469,-119.8653,PUD No 1 of Douglas County - (WA),866.8,10,1967.0,1969.0,PUD No 1 of Douglas County - (WA),1.0
+3926.0,Hydro,Little Goose,WA,Columbia,East,46.5838,-118.0273,USACE Northwestern Division,810.0,6,1970.0,1978.0,USACE Northwestern Division,1.0
+3927.0,Hydro,Lower Monumental,WA,Walla Walla,East,46.5635,-118.5397,USACE Northwestern Division,810.0,6,1969.0,1979.0,USACE Northwestern Division,1.0
+6175.0,Hydro,Lower Granite,WA,Whitman,East,46.659503,-117.429385,USACE Northwestern Division,810.0,6,1975.0,1978.0,USACE Northwestern Division,1.0
+3845.0,Coal,Transalta Centralia Generation,WA,Lewis,West,46.755938,-122.859764,TransAlta Centralia Gen LLC,729.9,1,1973.0,1973.0,TransAlta Centralia Gen LLC,1.0
+7999.0,Gas,Grays Harbor Energy Facility,WA,Grays Harbor,West,46.9692,-123.48,Invenergy Services LLC,714.9,3,2008.0,2008.0,Invenergy,1.0
+55328.0,Gas,Hermiston Power Partnership,OR,Umatilla,East,45.794046,-119.313323,Hermiston Power Partnership,689.4,3,2002.0,2002.0,Hermiston Power Partnership,1.0
+6200.0,Hydro,Rock Island,WA,Chelan,East,47.346111,-120.0917,PUD No 1 of Chelan County - (WA),629.4,19,1931.0,1979.0,PUD No 1 of Chelan County - (WA),1.0
+54761.0,Gas,Hermiston Generating Plant,OR,Umatilla,East,45.8042,-119.37,Hermiston Generating Co LP,621.2,4,1996.0,1996.0,PacifiCorp,0.5
+8073.0,Gas,Beaver,OR,Columbia,West,46.172401,-123.17392,Portland General Electric Co,610.7,8,1974.0,2001.0,Portland General Electric,1.0
+3925.0,Hydro,Ice Harbor,WA,Walla Walla,East,46.249801,-118.879838,USACE Northwestern Division,603.0,6,1962.0,1976.0,USACE Northwestern Division,1.0
+55662.0,Gas,Chehalis Generating Facility,WA,Lewis,West,46.6225,-122.9131,PacifiCorp,593.3,3,2003.0,2003.0,PacifiCorp,1.0
+55103.0,Gas,Klamath Cogeneration Plant,OR,Klamath,East,42.173889,-121.810556,Klamath Energy LLC,501.5,3,2001.0,2001.0,Avangrid,1.0
+58503.0,Gas,Carty Generating Station,OR,Morrow,East,45.698611,-119.813056,Portland General Electric Co,500.0,2,2016.0,2016.0,Portland General Electric,1.0
+56227.0,Gas,Port Westward,OR,Columbia,West,46.17894,-123.172039,Portland General Electric Co,483.0,2,2007.0,2007.0,Portland General Electric,1.0
+6202.0,Hydro,Ross,WA,Whatcom,West,48.732577,-121.06788,City of Seattle - (WA),450.0,4,1952.0,1956.0,City of Seattle - (WA),1.0
+56485.0,Wind,Biglow Canyon Wind Farm,OR,Sherman,East,45.653745,-120.603414,Portland General Electric Co,449.7,3,2007.0,2010.0,Portland General Electric,1.0
+3013.0,Hydro,Hells Canyon,OR,Wallowa,East,45.2439,-116.7008,Idaho Power Co,411.1,3,1967.0,1967.0,Idaho Power Co,1.0
+607.0,Gas,Fredonia (WA),WA,Skagit,West,48.4558,-122.4358,Puget Sound Energy Inc,376.0,4,1984.0,2001.0,Puget Sound Energy,1.0
+3050.0,Hydro,Round Butte,OR,Jefferson,East,44.605837,-121.277334,Portland General Electric Co,372.5,3,1964.0,1964.0,Portland General Electric,0.501
+57195.0,Wind,Lower Snake River Wind Energy Project,WA,Garfield,East,46.524167,-117.821666,Puget Sound Energy Inc,342.7,1,2012.0,2012.0,Puget Sound Energy,1.0
+55700.0,Gas,Mint Farm Generating Station,WA,Cowlitz,West,46.138824,-122.985506,Puget Sound Energy Inc,319.0,2,2008.0,2008.0,Puget Sound Energy,1.0
+55818.0,Gas,Frederickson Power LP,WA,Pierce,West,47.086111,-122.365674,Frederickson Power LP,318.3,2,2002.0,2002.0,Capital Power Corporation,0.501
+6163.0,Pumped storage,Grand Coulee,WA,Grant,East,47.957511,-118.977323,U S Bureau of Reclamation,314.0,6,1973.0,1984.0,U S Bureau of Reclamation,1.0
+55482.0,Gas,Goldendale Generating Station,WA,Klickitat,East,45.8114,-120.833,Puget Sound Energy Inc,302.8,2,2004.0,2004.0,Puget Sound Energy,1.0
+3918.0,Hydro,Mossyrock,WA,Lewis,West,46.5347,-122.4247,City of Tacoma - (WA),300.0,2,1968.0,1968.0,City of Tacoma - (WA),1.0
+56468.0,Wind,Klondike Windpower III,OR,Sherman,East,45.5836,-120.5042,Avangrid Power LLC,297.5,2,2007.0,2008.0,Avangrid,1.0
+7350.0,Gas,Coyote Springs,OR,Morrow,East,45.847998,-119.67392,Portland General Electric Co,296.0,2,1995.0,1995.0,Portland General Electric,1.0
+57550.0,Wind,Horseshoe Bend Wind LLC,OR,Gilliam,East,45.58555,-120.008249,Shepherds Flat Wind LLC,290.0,1,2012.0,2012.0,Brookfield Renewable,1.0
+57549.0,Wind,South Hurlburt Wind LLC,OR,Gilliam,East,45.706262,-120.079987,Shepherds Flat Wind LLC,290.0,1,2012.0,2012.0,Brookfield Renewable,1.0
+7931.0,Gas,Coyote Springs II,OR,Morrow,East,45.848039,-119.673965,Avista Corp,287.0,2,2003.0,2003.0,Avista Corp,1.0
+54537.0,Gas,Ferndale Generating Station,WA,Whatcom,West,48.828996,-122.685114,Puget Sound Energy Inc,285.5,3,1994.0,1994.0,Puget Sound Energy,1.0
+56322.0,Wind,Wild Horse,WA,Kittitas,East,47.036269,-120.206494,Puget Sound Energy Inc,272.6,2,2006.0,2009.0,Puget Sound Energy,1.0
+58571.0,Wind,Tucannon River Wind Farm,WA,Columbia,East,46.421111,-118.026944,Portland General Electric Co,266.8,1,2014.0,2014.0,Portland General Electric,1.0
+57526.0,Wind,North Hurlburt Wind LLC,OR,Gilliam,East,45.731611,-120.083466,Shepherds Flat Wind LLC,265.0,1,2012.0,2012.0,Brookfield Renewable,1.0
+57159.0,Wind,Windy Flats Wind Project,WA,Klickitat,East,45.7269,-120.8339,Windy Flats Partners LLC,262.2,1,2009.0,2009.0,Windy Flats Partners LLC,1.0
+7605.0,Gas,River Road Gen Plant,WA,Clark,West,45.6497,-122.7256,PUD No 1 of Clark County - (WA),248.0,1,1997.0,1997.0,PUD No 1 of Clark County - (WA),1.0
+3850.0,Hydro,Swift 1,WA,Skamania,West,46.060833,-122.201667,PacifiCorp,240.0,3,1958.0,1958.0,PacifiCorp,1.0
+56466.0,Wind,Marengo Wind Plant,WA,Columbia,East,46.3747,-117.7772,PacifiCorp,234.0,2,2007.0,2008.0,PacifiCorp,1.0
+58266.0,Gas,Port Westward Unit 2,OR,Columbia,West,46.178889,-123.171944,Portland General Electric Co,225.6,12,2014.0,2015.0,Portland General Electric,1.0
+6431.0,Hydro,Gorge,WA,Whatcom,West,48.698056,-121.208611,City of Seattle - (WA),207.3,4,1924.0,1951.0,City of Seattle - (WA),1.0
+56487.0,Wind,White Creek Wind Farm,WA,Klickitat,East,45.815467,-120.341883,White Creek Wind 1 LLC,204.0,1,2007.0,2007.0,White Creek Wind 1 LLC,1.0
+63710.0,Wind,Golden Hill Wind,OR,Sherman,East,45.562715,-120.708464,Avangrid Power LLC,201.3,1,2022.0,2022.0,Avangrid,1.0
+67869.0,Batteries,Sundial (Troutdale) BESS,OR,Multnomah,West,45.559753,-122.4201,"Troutdale Grid, LLC",200.0,1,2024.0,2024.0,NextEra Energy Resources,1.0
+66560.0,Wind,Wheatridge East Wind,OR,Morrow,East,45.542649,-119.382165,Wheatridge East Wind LLC,200.0,1,2025.0,2025.0,NextEra Energy Resources,1.0
+67711.0,Batteries,Seaside BESS,OR,Multnomah,West,45.615304,-122.781113,Portland General Electric Co,200.0,1,2025.0,2025.0,Portland General Electric,1.0
+62745.0,Wind,Wheatridge Hybrid,OR,Morrow,East,45.55975,-119.6338,"Wheatridge Wind Holdings, LLC",200.0,1,2020.0,2020.0,NextEra Energy Resources,1.0
+58099.0,Wind,Montague Wind Power Facility LLC,OR,Gilliam,East,45.5857,-120.0904,Avangrid Power LLC,200.0,1,2019.0,2019.0,Avangrid,1.0
+57333.0,Wind,Leaning Juniper Wind Power II,OR,Gilliam,East,45.651,-120.2598,Avangrid Power LLC,199.2,1,2011.0,2011.0,Avangrid,1.0
+56361.0,Wind,Big Horn Wind Project,WA,Klickitat,East,45.8877,-120.2896,Avangrid Power LLC,199.0,1,2006.0,2006.0,Avangrid,1.0
+3014.0,Hydro,Oxbow (OR),OR,Baker,East,44.971643,-116.835042,Idaho Power Co,190.0,4,1961.0,1961.0,Idaho Power Co,1.0
+6432.0,Hydro,Diablo,WA,Whatcom,West,48.713853,-121.131736,City of Seattle - (WA),182.4,4,1936.0,1937.0,City of Seattle - (WA),1.0
+99.0,Gas,Frederickson,WA,Pierce,West,47.079722,-122.365,Puget Sound Energy Inc,177.8,2,1981.0,1981.0,Puget Sound Energy,1.0
+55560.0,Wind,FPL Energy Vansycle LLC (WA),WA,Walla Walla,East,46.06,-118.917,FPL Energy Vansycle LLC,176.9,1,2001.0,2001.0,NextEra Energy Resources,1.0
+7870.0,Gas,Encogen,WA,Whatcom,West,48.746,-122.486,Puget Sound Energy Inc,176.4,4,1993.0,1993.0,Puget Sound Energy,1.0
+6120.0,Gas,Whitehorn,WA,Whatcom,West,48.885636,-122.75164,Puget Sound Energy Inc,169.2,2,1981.0,1981.0,Puget Sound Energy,1.0
+3917.0,Hydro,Mayfield,WA,Lewis,West,46.5035,-122.5885,City of Tacoma - (WA),162.0,4,1963.0,1983.0,City of Tacoma - (WA),1.0
+63441.0,Solar,Montague Solar,OR,Gilliam,East,45.54,-120.18,Avangrid Power LLC,162.0,1,2023.0,2023.0,Avangrid,1.0
+56255.0,Wind,Hopkins Ridge Wind,WA,Columbia,East,46.4211,-117.8331,Puget Sound Energy Inc,156.6,2,2005.0,2008.0,Puget Sound Energy,1.0
+64974.0,Solar,Daybreak Solar,OR,Wasco,East,45.131793,-120.880655,Avangrid Power LLC,151.7,1,2025.0,2025.0,Avangrid,1.0
+57320.0,Wind,Juniper Canyon I Wind Project,WA,Klickitat,East,45.9215,-120.2355,Avangrid Power LLC,151.2,1,2011.0,2011.0,Avangrid,1.0
+63509.0,Solar,Lund Hill Solar,WA,Klickitat,East,45.888,-120.355,Avangrid Power LLC,150.0,1,2022.0,2022.0,Avangrid,1.0
+62936.0,Wind,Rattlesnake Flat,WA,Adams,East,46.941015,-118.567136,"Rattlesnake Flat, LLC",144.0,1,2020.0,2020.0,Clearway Energy Group,1.0
+54268.0,Gas,HF Sinclair Puget Sound Refining,WA,Skagit,West,48.4708,-122.56,HF Sinclair Corporation,139.8,3,1991.0,1993.0,HF Sinclair Corporation,1.0
+56702.0,Wind,Washington Wind,WA,Klickitat,East,45.8797,-120.8072,Washington Wind LLC,136.3,1,2009.0,2009.0,Washington Wind LLC,1.0
+63205.0,Wind,Skookumchuck Wind Facility,WA,Thurston,West,46.85074,-122.664447,Southern Power Co,136.0,1,2020.0,2020.0,Southern Power,1.0
+3847.0,Hydro,Merwin,WA,Cowlitz,West,45.9567,-122.554444,PacifiCorp,136.0,4,1931.0,1958.0,PacifiCorp,1.0
+3852.0,Hydro,Yale,WA,Cowlitz,West,45.96277,-122.335467,PacifiCorp,134.0,2,1953.0,1953.0,PacifiCorp,1.0
+54476.0,Gas,Sumas Power Plant,WA,Whatcom,West,48.9905,-122.2733,Puget Sound Energy Inc,125.5,2,1993.0,1993.0,Puget Sound Energy,1.0
+55989.0,Wind,FPL Energy Vansycle LLC (OR),OR,Umatilla,East,46.01279,-118.816246,FPL Energy Vansycle LLC,122.8,1,2001.0,2001.0,NextEra Energy Resources,1.0
+3083.0,Hydro,Lookout Point,OR,Lane,West,43.9153,-122.7531,USACE Northwestern Division,120.0,3,1955.0,1955.0,USACE Northwestern Division,1.0
+55544.0,Gas,Klamath Expansion Project,OR,Klamath,East,42.172718,-121.814393,Klamath Energy LLC,117.6,4,2002.0,2002.0,Avangrid,1.0
+3067.0,Hydro,Carmen Smith,OR,Linn,West,44.285977,-122.041352,Eugene Water & Electric Board,114.3,3,1963.0,1963.0,Eugene Water & Electric Board,1.0
+7588.0,Hydro,H M Jackson,WA,Snohomish,West,47.9084,-121.8144,PUD No 1 of Snohomish County - (WA),111.8,4,1984.0,1984.0,PUD No 1 of Snohomish County - (WA),1.0
+56360.0,Wind,Leaning Juniper,OR,Gilliam,East,45.652457,-120.209783,PacifiCorp,110.4,1,2006.0,2006.0,PacifiCorp,1.0
+3048.0,Hydro,Pelton,OR,Jefferson,East,44.694374,-121.231379,Portland General Electric Co,109.8,3,1957.0,1958.0,Portland General Electric,0.501
+57530.0,Wind,Palouse,WA,Whitman,East,47.155833,-117.364444,Onward Energy,105.3,1,2012.0,2012.0,Onward Energy,1.0
+3861.0,Hydro,Upper Baker,WA,Whatcom,West,48.649,-121.6907,Puget Sound Energy Inc,104.8,2,1959.0,1959.0,Puget Sound Energy,1.0
+3855.0,Hydro,Lower Baker,WA,Skagit,West,48.5478,-121.7407,Puget Sound Energy Inc,103.9,2,1960.0,2013.0,Puget Sound Energy,1.0
+56666.0,Wind,Goodnoe Hills,WA,Klickitat,East,45.781825,-120.521151,PacifiCorp,103.4,1,2008.0,2008.0,PacifiCorp,1.0
+56854.0,Wind,Wheat Field Wind Power Project,OR,Gilliam,East,45.675804,-120.31832,Wheat Field Wind Power Project LLC,102.9,1,2009.0,2009.0,EDP Renewables,1.0
+56855.0,Wind,Arlington Wind Power Project,OR,Gilliam,East,45.7167,-120.2008,Arlington Wind Power Project LLC,102.9,1,2008.0,2008.0,EDP Renewables,1.0
+58324.0,Wind,Vansycle II Wind Energy Center,OR,Umatilla,East,45.899167,-118.591389,FPL Energy Stateline II Inc,102.3,1,2009.0,2009.0,NextEra Energy Resources,1.0
+56790.0,Wind,Hay Canyon Wind Power LLC,OR,Sherman,East,45.52,-120.5744,Avangrid Power LLC,100.8,1,2009.0,2009.0,Avangrid,1.0
+56623.0,Wind,Elkhorn Valley Wind Farm,OR,Union,East,45.085221,-117.816273,Telocaset Wind Power Partners,100.7,1,2007.0,2007.0,EDP Renewables,1.0
+56858.0,Wind,Sagebrush Power Partners,WA,Kittitas,East,47.1356,-120.6872,"Sagebrush Power Partners, LLC",100.7,1,2010.0,2010.0,EDP Renewables,1.0
+3077.0,Hydro,Detroit,OR,Marion,West,44.7224,-122.2511,USACE Northwestern Division,100.0,2,1953.0,1953.0,USACE Northwestern Division,1.0
+64057.0,Wind,Wheatridge 1,OR,Morrow,East,45.55975,-119.6338,Portland General Electric Co,100.0,1,2020.0,2020.0,Portland General Electric,1.0
+57152.0,Wind,Harvest Wind Project,WA,Klickitat,East,45.8131,-120.3475,Harvest Wind Project TIC,98.9,1,2009.0,2009.0,Harvest Wind Project TIC,1.0
+57096.0,Wind,Star Point Wind Project LLC,OR,Sherman,East,45.51,-120.48,Avangrid Power LLC,98.7,1,2010.0,2010.0,Avangrid,1.0
+56789.0,Wind,Pebble Springs Wind LLC,OR,Gilliam,East,45.7119,-120.125,Avangrid Power LLC,98.7,1,2009.0,2009.0,Avangrid,1.0
+7936.0,Wind,Nine Canyon,WA,Benton,East,46.0958,-119.0964,Energy Northwest,95.9,1,2002.0,2002.0,Energy Northwest,1.0
+56695.0,Hydro,Summer Falls Power Plant,WA,Grant,East,47.5025,-119.2917,Columbia Basin Hydropower,92.0,2,1985.0,1985.0,Quincy-Columbia Basin Irr Dist,0.334
+3891.0,Hydro,Box Canyon,WA,Pend Oreille,East,48.780856,-117.418337,PUD No 1 of Pend Oreille County - (WA),90.0,4,1955.0,1955.0,PUD No 1 of Pend Oreille County - (WA),1.0
+57188.0,Wind,Vantage Wind Energy LLC,WA,Kittitas,East,46.9547,-120.1819,Invenergy Services LLC,90.0,1,2010.0,2010.0,Invenergy,1.0
+3915.0,Hydro,Cushman 2,WA,Mason,West,47.3698,-123.1603,City of Tacoma - (WA),84.6,5,1930.0,2013.0,City of Tacoma - (WA),1.0
+67261.0,Solar,Goose Prairie Solar,WA,Yakima,East,46.52923,-120.23953,Goose Prairie Solar LLC,80.0,1,2024.0,2024.0,Goose Prairie Solar LLC,1.0
+3080.0,Hydro,Green Peter,OR,Linn,West,44.4494,-122.5494,USACE Northwestern Division,80.0,2,1967.0,1967.0,USACE Northwestern Division,1.0
+67712.0,Batteries,Constable BESS,OR,Washington,West,45.559046,-122.943674,Portland General Electric Co,75.0,1,2024.0,2024.0,Portland General Electric,1.0
+56359.0,Wind,Klondike Windpower II,OR,Sherman,East,45.571,-120.593,Avangrid Power LLC,75.0,1,2005.0,2005.0,Avangrid,1.0
+56952.0,Wind,Willow Creek Energy Center,OR,Morrow,East,45.6533,-119.9914,Invenergy Services LLC,72.0,1,2009.0,2009.0,Invenergy,1.0
+6265.0,Hydro,Swift 2,WA,Cowlitz,West,46.0594,-122.2594,PacifiCorp,72.0,2,1958.0,1959.0,PUD No 1 of Cowlitz County,1.0
+63050.0,Solar,Millican Solar Energy LLC,OR,Crook,East,44.154107,-120.53409,Invenergy Services LLC,70.0,1,2021.0,2021.0,Invenergy,1.0
+3867.0,Hydro,Long Lake,WA,Lincoln,East,47.834444,-117.836111,Avista Corp,70.0,4,1915.0,1924.0,Avista Corp,1.0
+7427.0,Hydro,Cowlitz Falls,WA,Lewis,West,46.4661,-122.1097,PUD No 1 of Lewis County - (WA),70.0,2,1994.0,1994.0,PUD No 1 of Lewis County - (WA),1.0
+57137.0,Wind,Eurus Combine Hills Turbine Ranch 2,OR,Umatilla,East,45.943,-118.591,Eurus Combine Hills II LLC,66.1,1,2010.0,2010.0,Eurus Combine Hills II LLC,1.0
+3916.0,Hydro,LaGrande,WA,Pierce,West,46.8328,-122.3196,City of Tacoma - (WA),64.0,5,1912.0,1945.0,City of Tacoma - (WA),1.0
+50187.0,Other,Nippon Dynawave Packaging Longview WA,WA,Cowlitz,West,46.1236,-122.9728,Nippon Dynawave Packaging Co.,62.4,4,1948.0,1976.0,Nippon Dynawave Packaging Co.,1.0
+6210.0,Gas,Northeast (WA),WA,Spokane,East,47.73511,-117.370538,Avista Corp,61.8,1,1978.0,1978.0,Avista Corp,1.0
+66942.0,Solar,Skysol,OR,Klamath,East,42.047765,-121.49212,Skysol Holdco LLC,61.2,1,2023.0,2023.0,Skysol Holdco LLC,1.0
+63507.0,Solar,Bakeoven Solar,OR,Wasco,East,45.131793,-120.880655,Avangrid Power LLC,60.0,1,2023.0,2023.0,Avangrid,1.0
+6424.0,Hydro,Chelan,WA,Chelan,East,47.8347,-120.0133,PUD No 1 of Chelan County - (WA),59.2,2,1927.0,1928.0,PUD No 1 of Chelan County - (WA),1.0
+61048.0,Solar,Solar Star Oregon II,OR,Crook,East,44.1843,-120.918,Avangrid Power LLC,56.3,1,2017.0,2017.0,Avangrid,1.0
+50396.0,Other,Dillard Complex,OR,Douglas,West,43.0895,-123.4156,Roseburg Forest Products Co,51.5,6,1955.0,1955.0,Roseburg Forest Products Co,1.0
+6505.0,Hydro,Oak Grove,OR,Clackamas,West,45.122009,-122.06987,Portland General Electric Co,51.0,2,1924.0,1931.0,Portland General Electric,1.0
+3913.0,Hydro,Alder,WA,Pierce,West,46.8016,-122.3102,City of Tacoma - (WA),51.0,2,1945.0,1947.0,City of Tacoma - (WA),1.0
+550.0,Other,Kettle Falls Generating Station,WA,Stevens,East,48.620336,-118.111059,Avista Corp,50.7,1,1983.0,1983.0,Avista Corp,1.0
+3914.0,Hydro,Cushman 1,WA,Mason,West,47.4181,-123.2252,City of Tacoma - (WA),50.4,2,1926.0,1926.0,City of Tacoma - (WA),1.0
+62745.0,Solar,Wheatridge Hybrid,OR,Morrow,East,45.55975,-119.6338,"Wheatridge Wind Holdings, LLC",50.0,1,2022.0,2022.0,NextEra Energy Resources,1.0
+57635.0,Wind,Linden Wind Energy Project,WA,Klickitat,East,45.744171,-120.783568,Los Angeles Department of Water & Power,50.0,1,2010.0,2010.0,Southern California P P A,1.0
+57319.0,Wind,Big Horn Wind II,WA,Klickitat,East,45.9192,-120.3039,Avangrid Power LLC,50.0,1,2011.0,2011.0,Avangrid,1.0
+55739.0,Wind,Condon Windpower LLC,OR,Gilliam,East,45.2766,-120.2794,ALLETE Clean Energy,49.8,2,2001.0,2002.0,ALLETE Clean Energy,1.0
+6174.0,Hydro,Lost Creek,OR,Jackson,West,42.6717,-122.6772,USACE Northwestern Division,49.0,2,1977.0,1977.0,USACE Northwestern Division,1.0
+62560.0,Solar,Airport Solar,OR,Lake,East,42.170176,-120.402317,Airport Solar LLC,47.3,1,2019.0,2019.0,Airport Solar LLC,1.0
+54562.0,Other,Longview Fibre,WA,Cowlitz,West,46.103887,-122.918429,Longview Fibre Co,45.0,2,1958.0,1966.0,Longview Fibre Co,1.0
+6421.0,Hydro,Lemolo 2,OR,Douglas,West,43.280611,-122.40248,PacifiCorp,43.7,1,1956.0,1956.0,PacifiCorp,1.0
+3866.0,Hydro,Little Falls (WA),WA,Lincoln,East,47.821667,-117.916667,Avista Corp,43.2,4,1910.0,1911.0,Avista Corp,1.0
+56195.0,Wind,Combine Hills I,OR,Umatilla,East,45.943,-118.591,Eurus Combine Hills I LLC,43.0,1,2003.0,2003.0,Eurus Combine Hills I LLC,1.0
+3040.0,Hydro,Toketee Falls,OR,Douglas,West,43.272729,-122.447498,PacifiCorp,42.6,3,1949.0,1950.0,PacifiCorp,1.0
+3047.0,Hydro,North Fork,OR,Clackamas,West,45.243287,-122.27995,Portland General Electric Co,40.8,2,1958.0,1958.0,Portland General Electric,1.0
+10869.0,Other,Biomass One LP,OR,Jackson,West,42.436111,-122.849958,Biomass One LP,40.0,3,1985.0,2009.0,Biomass One LP,1.0
+63049.0,Solar,Prineville Solar Energy LLC,OR,Crook,East,44.163296,-120.524077,Invenergy Services LLC,40.0,1,2021.0,2021.0,Invenergy,1.0
+7867.0,Hydro,Snoqualmie 2,WA,King,West,47.5445,-121.8414,Puget Sound Energy Inc,38.7,2,1957.0,2013.0,Puget Sound Energy,1.0
+3869.0,Hydro,Nine Mile,WA,Spokane,East,47.769722,-117.537222,Avista Corp,37.6,4,1908.0,1994.0,Avista Corp,1.0
+3045.0,Hydro,Faraday,OR,Clackamas,West,45.268045,-122.32009,Portland General Electric Co,37.2,3,1958.0,2023.0,Portland General Electric,1.0
+58022.0,Other,Neal Hot Springs Geothermal Project,OR,Malheur,East,44.023056,-117.46806,US Geothermal Inc.,33.0,3,2012.0,2012.0,USG Oregon LLC,1.0
+50191.0,Other,IP Springfield Oregon,OR,Lane,West,44.0569,-122.9555,International Paper Corporation - Springfield,32.7,1,1976.0,1976.0,Eugene Water & Electric Board,1.0
+3029.0,Hydro,Lemolo 1,OR,Douglas,West,43.3558,-122.2494,PacifiCorp,32.0,1,1955.0,1955.0,PacifiCorp,1.0
+3033.0,Hydro,Prospect 2,OR,Jackson,West,42.731237,-122.513974,PacifiCorp,32.0,2,1928.0,1928.0,PacifiCorp,1.0
+62745.0,Batteries,Wheatridge Hybrid,OR,Morrow,East,45.55975,-119.6338,"Wheatridge Wind Holdings, LLC",30.0,1,2022.0,2022.0,NextEra Energy Resources,1.0
+3081.0,Hydro,Hills Creek,OR,Lane,West,43.7107,-122.4238,USACE Northwestern Division,30.0,2,1962.0,1962.0,USACE Northwestern Division,1.0
+6430.0,Hydro,Cedar Falls (WA),WA,King,West,47.4193,-121.781858,City of Seattle - (WA),30.0,2,1921.0,1929.0,City of Seattle - (WA),1.0
+56192.0,Other,Georgia-Pacific Wauna Mill,OR,Clatsop,West,46.153955,-123.40658,Georgia-Pacific Wauna LLC,30.0,1,1996.0,1996.0,Georgia-Pacific Wauna LLC,1.0
+56406.0,Other,Sierra Pacific Burlington Facility,WA,Skagit,West,48.4481,-122.4331,Sierra Pacific Industries,28.0,1,2007.0,2007.0,Sierra Pacific Industries,1.0
+3929.0,Hydro,Packwood,WA,Lewis,West,46.595833,-121.569444,Energy Northwest - Packwood,27.5,1,1964.0,1964.0,Energy Northwest - Packwood,1.0
+56698.0,Hydro,Main Canal Headworks,WA,Grant,East,47.6164,-119.2992,Columbia Basin Hydropower,26.8,1,1987.0,1987.0,East Columbia Basin Irr Dist,0.332
+3076.0,Hydro,Cougar,OR,Lane,West,44.1307,-122.2439,USACE Northwestern Division,26.0,2,1964.0,1964.0,USACE Northwestern Division,1.0
+3021.0,Hydro,Clearwater 2,OR,Douglas,West,43.266894,-122.409807,PacifiCorp,26.0,1,1953.0,1953.0,PacifiCorp,1.0
+50886.0,Other,Spokane Waste to Energy,WA,Spokane,East,47.626327,-117.50424,City of Spokane - (WA),26.0,1,1991.0,1991.0,City of Spokane - (WA),1.0
+55125.0,Wind,Vansycle,OR,Umatilla,East,45.936157,-118.65999,ESI Vansycle Partners LP,25.0,1,1998.0,1998.0,ESI Vansycle Partners LP,1.0
+8022.0,Gas,Boulder Park,WA,Spokane,East,47.697222,-117.147222,Avista Corp,24.6,6,2002.0,2002.0,Avista Corp,1.0
+55871.0,Wind,Klondike Wind Power,OR,Sherman,East,45.5563,-120.5507,Avangrid Power LLC,24.5,1,2002.0,2002.0,Avangrid,1.0
+50827.0,Hydro,Twin Falls Hydro,WA,King,West,47.444554,-121.687812,"Central Rivers Power US, LLC",24.0,2,1989.0,1989.0,"Enel North America, Inc.",0.496
+4213.0,Hydro,PHP 1,OR,Multnomah,West,45.481708,-122.083188,City of Portland (OR),23.7,1,1982.0,1982.0,City of Portland (OR),1.0
+3854.0,Hydro,Electron,WA,Pierce,West,46.990967,-122.174921,Electron Hydro LLC,22.8,4,1904.0,1929.0,Electron Hydro LLC,1.0
+56781.0,Other,Evergreen BioPower LLC,OR,Linn,West,44.770792,-122.611974,Evergreen BioPower LLC,21.0,1,2007.0,2007.0,Evergreen BioPower LLC,1.0
+6552.0,Hydro,Foster,OR,Linn,West,44.4146,-122.6712,USACE Northwestern Division,20.0,2,1968.0,1968.0,USACE Northwestern Division,1.0
+57457.0,Other,Seneca Sustainable Energy LLC,OR,Lane,West,44.116306,-123.179007,Seneca Sustainable Energy LLC,19.8,1,2011.0,2011.0,Seneca Sustainable Energy LLC,1.0
+54721.0,Hydro,Warm Springs Power Enterprises,OR,Jefferson,East,44.724242,-121.247729,Warm Springs Power Enterprises,19.6,1,1982.0,1982.0,Warm Springs Power Enterprises,1.0
+61933.0,Solar,Adams Nielson Solar,WA,Adams,East,46.95528,-118.621244,"Strata Manager, LLC",19.2,1,2018.0,2018.0,"Adams Nielson Solar, LLC",1.0
+3049.0,Hydro,River Mill,OR,Clackamas,West,45.299991,-122.350023,Portland General Electric Co,18.8,5,1911.0,1952.0,Portland General Electric,1.0
+58109.0,Other,Georgia-Pacific Toledo Mill,OR,Lincoln,West,44.611944,-123.931944,Georgia-Pacific Toledo LLC,18.8,1,2007.0,2007.0,Georgia-Pacific Toledo LLC,1.0
+3074.0,Hydro,Big Cliff,OR,Marion,West,44.7514,-122.2832,USACE Northwestern Division,18.0,1,1954.0,1954.0,USACE Northwestern Division,1.0
+3036.0,Hydro,Slide Creek,OR,Douglas,West,43.2939,-122.4728,PacifiCorp,18.0,1,1951.0,1951.0,PacifiCorp,1.0
+55882.0,Other,Sierra Pacific Aberdeen,WA,Grays Harbor,West,46.9728,-123.7739,Sierra Pacific Industries,18.0,1,2003.0,2003.0,Sierra Pacific Industries,1.0
+50380.0,Hydro,Upriver Dam Hydro Plant,WA,Spokane,East,47.6822,-117.3319,City of Spokane - (WA),17.6,5,1936.0,1984.0,City of Spokane - (WA),1.0
+6403.0,Hydro,Green Springs,OR,Jackson,West,42.121168,-122.547896,U S Bureau of Reclamation,17.2,1,1960.0,1960.0,U S Bureau of Reclamation,1.0
+67698.0,Batteries,Coffee Creek BESS,OR,Washington,West,45.341676,-122.781457,Portland General Electric Co,17.0,1,2024.0,2024.0,Portland General Electric,1.0
+622.0,Hydro,South Fork Tolt,WA,King,West,47.699167,-121.783333,City of Seattle - (WA),16.8,1,1995.0,1995.0,City of Seattle - (WA),1.0
+3053.0,Hydro,Sullivan,OR,Clackamas,West,45.354004,-122.618954,Portland General Electric Co,15.4,13,1924.0,1952.0,Portland General Electric,1.0
+61854.0,Solar,Baker City Solar,OR,Baker,East,44.702418,-117.763482,"Adapture Renewables, Inc.",15.0,1,2020.0,2020.0,"Adapture Renewables, Inc.",1.0
+50185.0,Other,Cosmo Specialty Fibers Plant,WA,Grays Harbor,West,46.954071,-123.761086,Cosmo Specialty Fibers,15.0,2,1957.0,1957.0,Cosmo Specialty Fibers,1.0
+3020.0,Hydro,Clearwater 1,OR,Douglas,West,43.251244,-122.337924,PacifiCorp,15.0,1,1953.0,1953.0,PacifiCorp,1.0
+3078.0,Hydro,Dexter,OR,Lane,West,43.9242,-122.8055,USACE Northwestern Division,15.0,1,1955.0,1955.0,USACE Northwestern Division,1.0
+9095.0,Hydro,Monroe Street,WA,Spokane,East,47.653611,-117.420556,Avista Corp,14.8,1,1992.0,1992.0,Avista Corp,1.0
+57496.0,Hydro,Tieton Dam Hydro Electric Project,WA,Yakima,East,46.658,-121.1287,City of Burbank Water and Power - (CA),13.8,2,2006.0,2006.0,Southern California P P A,1.0
+6407.0,Hydro,Roza,WA,Yakima,East,46.618413,-120.477759,U S Bureau of Reclamation,12.9,1,1958.0,1958.0,U S Bureau of Reclamation,1.0
+3860.0,Hydro,Snoqualmie,WA,King,West,47.54011,-121.83702,Puget Sound Energy Inc,12.8,5,1898.0,2013.0,Puget Sound Energy,1.0
+57015.0,Other,Waste Management Columbia Ridge LFGTE,OR,Gilliam,East,45.5739,-120.2969,WM Renewable Energy LLC,12.8,12,2009.0,2014.0,WM Renewable Energy LLC,1.0
+7127.0,Hydro,Wynoochee,WA,Grays Harbor,West,47.385072,-123.605225,City of Tacoma - (WA),12.8,1,1994.0,1994.0,City of Tacoma - (WA),1.0
+58352.0,Other,McKinley Paper Co. - Washington Mill,WA,Clallam,West,48.134722,-123.465556,McKinley Paper Co. - Washington Mill,12.6,1,2022.0,2022.0,McKinley Paper Co. - Washington Mill,1.0
+6406.0,Hydro,Chandler,WA,Benton,East,46.26678,-119.589821,U S Bureau of Reclamation,12.0,2,1956.0,1956.0,U S Bureau of Reclamation,1.0
+7508.0,Hydro,Stone Creek,OR,Clackamas,West,45.081111,-121.886611,Eugene Water & Electric Board,12.0,1,1994.0,1994.0,Eugene Water & Electric Board,1.0
+54809.0,Other,University of Washington Power Plant,WA,King,West,47.6539,-122.3036,University of Washington,12.0,6,1993.0,2022.0,University of Washington,1.0
+3878.0,Hydro,Yelm,WA,Thurston,West,46.974912,-122.635795,City of Centralia - (WA),12.0,3,1930.0,1955.0,City of Centralia - (WA),1.0
+54267.0,Hydro,Koma Kulshan,WA,Whatcom,West,48.680178,-121.723294,"Eagle Creek Renewable Energy, LLC",12.0,1,1990.0,1990.0,Koma Kulshan Associates,1.0
+4214.0,Hydro,PHP 2,OR,Clackamas,West,45.448977,-122.151257,City of Portland (OR),11.8,1,1982.0,1982.0,City of Portland (OR),1.0
+3026.0,Hydro,Fish Creek,OR,Douglas,West,43.274221,-122.448978,PacifiCorp,11.0,1,1952.0,1952.0,PacifiCorp,1.0
+3037.0,Hydro,Soda Springs,OR,Douglas,West,43.3061,-122.5014,PacifiCorp,11.0,1,1952.0,1952.0,PacifiCorp,1.0
+54950.0,Gas,Univ of Oregon Central Power Station,OR,Lane,West,44.048333,-123.073889,University of Oregon,11.0,2,2012.0,2012.0,University of Oregon,1.0
+59076.0,Wind,Chopin Wind LLC,OR,Umatilla,East,45.88,-118.463333,"Chopin Wind, LLC",10.0,1,2016.0,2016.0,"Chopin Wind, LLC",1.0
+59490.0,Wind,Jett Creek Windfarm (Burnt River),OR,Baker,East,44.425,-117.273889,Jett Creek,10.0,1,2017.0,2017.0,Jett Creek,1.0
+59491.0,Wind,Benson Creek Windfarm (Burnt River),OR,Baker,East,44.366944,-117.343889,Benson Creek,10.0,1,2017.0,2017.0,Benson Creek,1.0
+64830.0,Solar,"Brightwood Solar, LLC",OR,Clackamas,West,45.384949,-122.084421,SunStrong Management,10.0,1,2021.0,2021.0,SunStrong Management,1.0
+59494.0,Wind,Willow Spring Windfarm (Burnt River),OR,Baker,East,44.381944,-117.273056,Willow Spring,10.0,1,2017.0,2017.0,Willow Spring,1.0
+59492.0,Wind,Durbin Creek Windfarm (Burnt River),OR,Baker,East,44.353056,-117.323056,Durbin Creek,10.0,1,2017.0,2017.0,Durbin Creek,1.0
+59493.0,Wind,Prospector Windfarm (Burnt River),OR,Baker,East,44.418056,-117.255,Prospector,10.0,1,2017.0,2017.0,Prospector,1.0
+56970.0,Wind,Four Mile Canyon Windfarm LLC,OR,Morrow,East,45.6447,-119.4533,Echo 2,10.0,1,2009.0,2009.0,Echo 2,1.0
+61424.0,Solar,"OR Solar 8, LLC",OR,Klamath,East,42.238888,-121.585833,"Heelstone Energy Holdings, LLC",10.0,1,2018.0,2018.0,"Heelstone Energy Holdings, LLC",1.0
+64053.0,Wind,"Orchard Windfarm 4, LLC",OR,Morrow,East,45.38,-119.33322,"Orchard Windfarm, LLC",10.0,1,2020.0,2020.0,"Orchard Windfarm, LLC",1.0
+61496.0,Solar,Adams Solar Center,OR,Jefferson,East,44.675,-121.122,"GCL New Energy, Inc.",10.0,1,2018.0,2018.0,"GCL New Energy, Inc.",1.0
+63331.0,Solar,"Firwood Solar, LLC",OR,Clackamas,West,45.35,-122.25,Cardinal Renewables,10.0,1,2020.0,2020.0,Cardinal Renewables,1.0
+63330.0,Solar,"Duus Solar, LLC",OR,Clackamas,West,45.318,-122.331,Cardinal Renewables,10.0,1,2020.0,2020.0,Cardinal Renewables,1.0
+63301.0,Solar,Garrett Solar,OR,Lake,East,42.16,-120.4,"SOLV Energy, LLC",10.0,1,2019.0,2019.0,"Garrett Solar, LLC",1.0
+62935.0,Wind,"Orchard Windfarm 1, LLC",OR,Morrow,East,45.38,-119.3332,"Orchard Windfarm, LLC",10.0,1,2020.0,2020.0,"Orchard Windfarm, LLC",1.0
+63778.0,Solar,"Suntex Solar, LLC",OR,Harney,East,43.56149,-119.68621,"SC Oregon 2 Lessor Parent, LLC",10.0,1,2020.0,2020.0,"SC Oregon 2 Lessor Parent, LLC",1.0
+63779.0,Solar,"Rock Garden Solar, LLC",OR,Lake,East,43.39691,-120.93038,"SC Oregon 2 Lessor Parent, LLC",10.0,1,2020.0,2020.0,"SC Oregon 2 Lessor Parent, LLC",1.0
+63795.0,Solar,"Alkali Solar, LLC",OR,Lake,East,43.31942,-121.0035,"SC Oregon 2 Lessor Parent, LLC",10.0,1,2020.0,2020.0,"SC Oregon 2 Lessor Parent, LLC",1.0
+63796.0,Solar,"West Hines Solar I, LLC",OR,Harney,East,43.50259,-119.14713,"SC Oregon 2 Lessor Parent, LLC",10.0,1,2020.0,2020.0,"SC Oregon 2 Lessor Parent, LLC",1.0
+63925.0,Solar,Riley,OR,Harney,East,43.5559,-119.6852,Riley Solar I LLC,10.0,1,2020.0,2020.0,Riley Solar I LLC,1.0
+63926.0,Solar,Fort Rock IV,OR,Lake,East,43.38988,-120.956087,Fort Rock Solar IV LLC,10.0,1,2020.0,2020.0,Fort Rock Solar IV LLC,1.0
+64052.0,Wind,"Orchard Windfarm 3, LLC",OR,Morrow,East,45.38,-119.3332,"Orchard Windfarm, LLC",10.0,1,2020.0,2020.0,"Orchard Windfarm, LLC",1.0
+61497.0,Solar,Elbe Solar Center,OR,Jefferson,East,44.618,-121.205,"GCL New Energy, Inc.",10.0,1,2018.0,2018.0,"GCL New Energy, Inc.",1.0
+9096.0,Hydro,Upper Falls,WA,Spokane,East,47.654444,-117.418889,Avista Corp,10.0,1,1922.0,1922.0,Avista Corp,1.0
+61430.0,Solar,"OR Solar 6, LLC",OR,Lake,East,42.208988,-120.367807,"Heelstone Energy Holdings, LLC",10.0,1,2017.0,2017.0,"Heelstone Energy Holdings, LLC",1.0
+64051.0,Wind,"Orchard Windfarm 2, LLC",OR,Morrow,East,45.38,-119.3332,"Orchard Windfarm, LLC",10.0,1,2020.0,2020.0,"Orchard Windfarm, LLC",1.0
+60332.0,Solar,"Open Range Solar Center, LLC",OR,Malheur,East,43.796766,-117.065311,Cypress Creek Renewables,10.0,1,2016.0,2016.0,Cypress Creek Renewables,1.0
+60334.0,Solar,"Thunderegg Solar Center, LLC",OR,Malheur,East,43.93097,-116.987626,Cypress Creek Renewables,10.0,1,2016.0,2016.0,Cypress Creek Renewables,1.0
+60335.0,Solar,"Vale Air Solar Center, LLC",OR,Malheur,East,43.965031,-117.25806,Cypress Creek Renewables,10.0,1,2016.0,2016.0,Cypress Creek Renewables,1.0
+61200.0,Solar,"OR Solar 2, LLC",OR,Jackson,West,42.542084,-122.781338,"OR Solar 2, LLC",10.0,1,2020.0,2020.0,"OR Solar 2, LLC",1.0
+61201.0,Solar,"OR Solar 3, LLC",OR,Klamath,East,42.022336,-121.418873,"Heelstone Energy Holdings, LLC",10.0,1,2017.0,2017.0,"Heelstone Energy Holdings, LLC",1.0
+61281.0,Solar,Bear Creek Solar Center,OR,Deschutes,East,44.060814,-121.237203,"GCL New Energy, Inc.",10.0,1,2018.0,2018.0,"GCL New Energy, Inc.",1.0
+61345.0,Solar,WyEast Solar,OR,Sherman,East,45.5846,-120.59994,Avangrid Power LLC,10.0,1,2018.0,2018.0,Avangrid,1.0
+7511.0,Hydro,McNary Dam Fish Attraction Project,WA,Benton,East,45.940034,-119.299078,Northern Wasco County PUD - (OR),10.0,1,1997.0,1997.0,Northern Wasco County PUD - (OR),0.5
+60548.0,Solar,"NorWest Energy 2, LLC",OR,Deschutes,East,44.06803,-121.22838,Cypress Creek Renewables,9.9,1,2016.0,2016.0,Cypress Creek Renewables,1.0
+63636.0,Solar,Fort Rock I,OR,Lake,East,43.320081,-121.003496,"Fort Rock Solar I, LLC",9.9,1,2020.0,2020.0,"Fort Rock Solar I, LLC",1.0
+61631.0,Solar,"Chiloquin Solar, LLC",OR,Klamath,East,42.610732,-121.861248,"Heelstone Energy Holdings, LLC",9.9,1,2018.0,2018.0,"Heelstone Energy Holdings, LLC",1.0
+61580.0,Solar,"Tumbleweed Solar, LLC",OR,Deschutes,East,44.192575,-121.233106,"Heelstone Energy Holdings, LLC",9.9,1,2017.0,2017.0,"Heelstone Energy Holdings, LLC",1.0
+61560.0,Solar,Eagle Point Solar,OR,Jackson,West,42.400814,-122.82917,SunStrong Management,9.9,1,2017.0,2017.0,SunStrong Management,1.0
+60976.0,Solar,"OSLH, LLC",OR,Deschutes,East,44.061,-121.228,SunStrong Management,9.9,1,2016.0,2016.0,SunStrong Management,1.0
+63344.0,Solar,Starvation,OR,Harney,East,43.50222,-119.14852,"Starvation Solar I, LLC",9.9,1,2019.0,2019.0,"Starvation Solar I, LLC",1.0
+56971.0,Wind,Oregon Trail Windfarm LLC,OR,Umatilla,East,45.7122,-119.4044,Echo 1,9.9,1,2009.0,2009.0,Echo 1,1.0
+56933.0,Wind,Threemile Canyon,OR,Morrow,East,45.6758,-119.9375,"Threemile Canyon Wind I, LLC",9.9,1,2009.0,2009.0,"Threemile Canyon Wind I, LLC",1.0
+56973.0,Wind,Sand Ranch Windfarm LLC,OR,Morrow,East,45.6447,-119.4767,Echo 1,9.9,1,2009.0,2009.0,Echo 1,1.0
+60331.0,Solar,"Hyline Solar Center, LLC",OR,Malheur,East,44.151256,-117.000071,Cypress Creek Renewables,9.0,1,2016.0,2016.0,Cypress Creek Renewables,1.0
+57578.0,Wind,PaTu Wind Farm LLC,OR,Sherman,East,45.613061,-120.616906,PaTu Wind Farm LLC,9.0,1,2010.0,2010.0,PaTu Wind Farm LLC,1.0
+56193.0,Other,Medford Operation,OR,Jackson,West,42.355517,-122.904642,Boise Cascade Wood Products LLC,8.5,2,1956.0,1965.0,Boise Cascade Wood Products LLC,1.0
+50362.0,Hydro,Tunnel 1 Power Project,OR,Malheur,East,43.642023,-117.232674,Owyhee Irrigation District,8.5,1,1993.0,1993.0,Owyhee Irrigation District,1.0
+56972.0,Wind,Pacific Canyon Windfarm LLC,OR,Morrow,East,45.6542,-119.4869,Echo 1,8.3,1,2009.0,2009.0,Echo 1,1.0
+61559.0,Solar,Woodline Solar,OR,Klamath,East,42.236443,-121.57766,SunStrong Management,8.0,1,2017.0,2017.0,SunStrong Management,1.0
+56969.0,Wind,Four Corners Windfarm LLC,OR,Umatilla,East,45.7286,-119.4181,Echo 2,8.0,1,2009.0,2009.0,Echo 2,1.0
+62272.0,Solar,Bly Solar Center,OR,Klamath,East,42.392193,-121.024494,"GCL New Energy, Inc.",8.0,1,2018.0,2018.0,"GCL New Energy, Inc.",1.0
+65737.0,Wind,Schumann Wind Farm,OR,Umatilla,East,45.90676,-118.4973,"Chopin Wind, LLC",8.0,1,2022.0,2022.0,"Chopin Wind, LLC",1.0
+3071.0,Hydro,Walterville,OR,Lane,West,44.069636,-122.835046,Eugene Water & Electric Board,8.0,1,1949.0,1949.0,Eugene Water & Electric Board,1.0
+60616.0,Solar,BC Solar,OR,Lake,East,42.175,-120.3598,BC Solar,8.0,1,2016.0,2016.0,BC Solar,1.0
+61423.0,Solar,"OR Solar 5, LLC",OR,Klamath,East,42.030332,-121.611565,"Heelstone Energy Holdings, LLC",8.0,1,2018.0,2018.0,"Heelstone Energy Holdings, LLC",1.0
+57763.0,Hydro,Youngs Creek Hydroelectric Project,WA,Snohomish,West,47.7916,-121.8,PUD No 1 of Snohomish County - (WA),7.5,1,2011.0,2011.0,PUD No 1 of Snohomish County - (WA),1.0
+50993.0,Other,Co-Gen II LLC,OR,Douglas,West,42.961126,-123.359138,Co-Gen II,7.5,1,1987.0,1987.0,Co-Gen II,1.0
+50921.0,Other,Co-Gen LLC,OR,Grant,East,44.458696,-118.720601,Co-Generation Co,7.5,1,1986.0,1986.0,Co-Generation Co,1.0
+50544.0,Other,Port Townsend Paper,WA,Jefferson,West,48.0931,-122.7958,Port Townsend Paper Co,7.5,1,1986.0,1986.0,Port Townsend Paper Co,1.0
+59357.0,Hydro,Dorena Hydro-Electric Facility,OR,Lane,West,43.786667,-122.958056,"Dorena Hydro, LLC",7.5,2,2014.0,2014.0,"Dorena Hydro, LLC",1.0
+550.0,Gas,Kettle Falls Generating Station,WA,Stevens,East,48.620336,-118.111059,Avista Corp,7.2,1,2002.0,2002.0,Avista Corp,1.0
+3034.0,Hydro,Prospect 3,OR,Jackson,West,42.730606,-122.41846,PacifiCorp,7.2,1,1932.0,1932.0,PacifiCorp,1.0
+54950.0,Other,Univ of Oregon Central Power Station,OR,Lane,West,44.048333,-123.073889,University of Oregon,6.6,3,2009.0,2009.0,University of Oregon,1.0
+56975.0,Wind,Ward Butte Windfarm LLC,OR,Umatilla,East,45.6967,-119.4097,Echo 1,6.6,1,2009.0,2009.0,Echo 1,1.0
+7431.0,Hydro,Dalles Dam North Fishway Project,OR,Wasco,East,45.614375,-121.136885,Northern Wasco County PUD - (OR),6.5,1,1991.0,1991.0,Northern Wasco County PUD - (OR),1.0
+61761.0,Other,Douglas County Forest Products,OR,Douglas,West,43.2898,-123.361638,Douglas County Forest Products - (OR),6.3,1,2006.0,2006.0,Douglas County Forest Products - (OR),1.0
+56694.0,Hydro,Russell D Smith,WA,Adams,East,46.7392,-119.1122,Columbia Basin Hydropower,6.1,1,1982.0,1982.0,Quincy-Columbia Basin Irr Dist,0.328
+57756.0,Wind,Coastal Energy Project,WA,Grays Harbor,West,46.793581,-124.065412,Coastal Community Action Program,6.0,1,2010.0,2010.0,Coastal Community Action Program,1.0
+60330.0,Solar,"Grove Solar Center, LLC",OR,Malheur,East,43.936687,-117.381214,Cypress Creek Renewables,6.0,1,2016.0,2016.0,Cypress Creek Renewables,1.0
+62241.0,Solar,NorWest Energy 9 LLC,OR,Umatilla,East,45.917,-119.343,MN8 Energy LLC,6.0,1,2018.0,2018.0,"NorWest Energy 9, LLC",1.0
+60517.0,Hydro,Hancock Creek Hydroelectric Project,WA,King,West,47.5722,-121.6897,PUD No 1 of Snohomish County - (WA),6.0,1,2018.0,2018.0,PUD No 1 of Snohomish County - (WA),1.0
+60418.0,Hydro,Calligan Creek Hydroelectric Project,WA,King,West,47.6008,-121.68861,PUD No 1 of Snohomish County - (WA),6.0,1,2018.0,2018.0,PUD No 1 of Snohomish County - (WA),1.0
+62268.0,Solar,"NorWest Energy 4, LLC",OR,Klamath,East,42.695,-121.614,MN8 Energy LLC,5.6,1,2019.0,2019.0,"NorWest Energy 4, LLC",1.0
+7725.0,Other,Coffin Butte,OR,Benton,West,44.6969,-123.2234,Pacific Northwest Generating Coop,5.6,5,1995.0,2007.0,Pacific Northwest Generating Coop,1.0
+57653.0,Gas,Oregon State University Energy Center,OR,Benton,West,44.564333,-123.289089,Oregon State University,5.5,1,2010.0,2010.0,Oregon State University,1.0
+50980.0,Hydro,Siphon Power Project,OR,Deschutes,East,44.033022,-121.3297,Central Oregon Irrigation Dist,5.4,2,1989.0,1989.0,Central Oregon Irrigation Dist,1.0
+57298.0,Other,Cedar Hills,WA,King,West,47.455833,-122.042778,King County Solid Waste Division,5.4,18,2009.0,2009.0,King County Solid Waste Division,1.0
+57437.0,Hydro,Juniper Ridge Hydroelectric Project,OR,Deschutes,East,44.142698,-121.269747,Central Oregon Irrigation Dist,5.0,1,2010.0,2010.0,Central Oregon Irrigation Dist,1.0
+62067.0,Solar,Urtica Solar Project,WA,Kittitas,East,47.10754,-120.68974,"Altus Power America Management, LLC",5.0,1,2022.0,2022.0,"Altus Power America Management, LLC",1.0
+62069.0,Solar,Penstemon Solar Project,WA,Kittitas,East,46.95931,-120.50905,"Altus Power America Management, LLC",5.0,1,2022.0,2022.0,"Altus Power America Management, LLC",1.0
+62071.0,Solar,Camas Solar Project,WA,Kittitas,East,46.95931,-120.50905,"Altus Power America Management, LLC",5.0,1,2022.0,2022.0,"Altus Power America Management, LLC",1.0
+50361.0,Hydro,Owyhee Dam Power Project,OR,Malheur,East,43.641603,-117.24374,Owyhee Irrigation District,5.0,1,1985.0,1985.0,Owyhee Irrigation District,1.0
+56967.0,Wind,Butter Creek Power LLC,OR,Umatilla,East,45.7017,-119.4222,CR51 Inc.,5.0,1,2009.0,2009.0,"Butter Creek Power, LLC",1.0
+59374.0,Solar,Old Mill Solar,OR,Klamath,East,42.203333,-121.046389,Old Mill Solar,5.0,1,2015.0,2015.0,Old Mill Solar,1.0
+58382.0,Gas,Threemile Digester,OR,Morrow,East,45.71,-119.901111,"TMF-RIG, LLC",4.8,3,2012.0,2012.0,"TMF-RIG, LLC",1.0
+57019.0,Other,Riverbend Landfill,OR,Yamhill,West,45.1672,-123.2511,WM Renewable Energy LLC,4.8,6,2010.0,2010.0,WM Renewable Energy LLC,1.0
+58687.0,Other,Finley Buttes Landfill Gas,OR,Morrow,East,45.69,-119.61,Finley BioEnergy LLC,4.8,3,2007.0,2007.0,Finley BioEnergy LLC,1.0
+50329.0,Other,West Point Treatment Plant,WA,King,West,47.661111,-122.446389,King County Dept-Natural Res - (WA),4.6,2,2012.0,2012.0,King County Dept-Natural Res - (WA),1.0
+58688.0,Other,LRI LFGTE Facility,WA,Pierce,West,46.975556,-122.290556,Frontier Operation Services,4.5,3,2013.0,2013.0,Frontier Operation Services,1.0
+57969.0,Other,Darrington,WA,Snohomish,West,48.269737,-121.599979,Hampton Lumber Mills - Washington Inc,4.5,1,2007.0,2007.0,Hampton Lumber Mills - Washington Inc,1.0
+60333.0,Solar,"Railroad Solar Center, LLC",OR,Malheur,East,43.998019,-117.10118,Cypress Creek Renewables,4.5,1,2016.0,2016.0,Cypress Creek Renewables,1.0
+58131.0,Solar,Outback Solar At Christmas Valley,OR,Lake,East,43.236944,-120.49,"Outback Solar, LLC",4.4,1,2012.0,2012.0,"Outback Solar, LLC",1.0
+54251.0,Hydro,Opal Springs Hydro,OR,Jefferson,East,44.49004,-121.298812,Deschutes Valley Water District,4.3,1,1985.0,1985.0,Deschutes Valley Water District,1.0
+54387.0,Hydro,Weeks Falls,WA,King,West,47.43348,-121.6483,"Eagle Creek Renewable Energy, LLC",4.3,1,1990.0,1990.0,"South Fork II Associates, LP",1.0
+58441.0,Wind,Swauk Wind LLC,WA,Kittitas,East,47.139167,-120.753056,Gamesa Wind US LLC,4.3,1,2012.0,2012.0,Gamesa Wind US LLC,1.0
+52187.0,Hydro,Falls Creek,OR,Linn,West,44.396815,-122.350246,"Eagle Creek Renewable Energy, LLC",4.1,1,1984.0,1984.0,Falls Creek Hydroelectric Project LP,1.0
+63694.0,Solar,"Butler Solar, LLC",OR,Yamhill,West,45.101804,-123.410102,SolRiver Capital LLC,4.0,1,2021.0,2021.0,SolRiver Capital LLC,1.0
+63961.0,Solar,"SSD Clackamas 1, LLC",OR,Clackamas,West,45.42,-122.333,"Thor Solar 1 CEI, LLC",4.0,1,2020.0,2020.0,"Thor Solar 1 CEI, LLC",1.0
+3032.0,Hydro,Prospect 1,OR,Jackson,West,42.730717,-122.515122,PacifiCorp,3.8,1,1912.0,1912.0,PacifiCorp,1.0
+54860.0,Hydro,Black Creek,WA,King,West,47.549652,-121.710517,Black Creek Hydro Inc,3.7,1,1994.0,1994.0,Black Creek Hydro Inc,1.0
+59382.0,Other,Paisley Geothermal Generating Plant,OR,Lake,East,42.695833,-120.557778,Surprise Valley Electrification,3.7,1,2015.0,2015.0,Surprise Valley Electrification,1.0
+50917.0,Hydro,Middle Fork Irrigation District,OR,Hood River,East,45.480701,-121.59984,Middle Fork Irrigation Dist,3.3,3,1986.0,1986.0,Middle Fork Irrigation Dist,1.0
+56974.0,Wind,Wagon Trail LLC,OR,Morrow,East,45.6531,-119.4625,CR51 Inc.,3.3,1,2009.0,2009.0,"Wagon Trail, LLC",1.0
+56461.0,Other,Dry Creek LFG to Energy Project,OR,Jackson,West,42.3844,-122.7718,Oregon Environmental Industries LLC,3.2,2,2007.0,2007.0,Oregon Environmental Industries LLC,1.0
+64198.0,Solar,"Horn Rapids Solar, Storage and Training",WA,Benton,East,46.3529,-119.3222,Energy Northwest,3.2,1,2020.0,2020.0,Tucci Energy Services,1.0
+3025.0,Hydro,East Side,OR,Klamath,East,42.224847,-121.795496,PacifiCorp,3.2,1,1924.0,1924.0,PacifiCorp,1.0
+7413.0,Other,Short Mountain,OR,Lane,West,43.96211,-122.997361,Emerald People's Utility Dist,3.2,4,1992.0,1993.0,Emerald People's Utility Dist,1.0
+63908.0,Solar,SulusSolar17,OR,Clackamas,West,45.34891,-122.433515,"Adapture Renewables, Inc.",3.1,1,2020.0,2020.0,"Adapture Renewables, Inc.",1.0
+58455.0,Hydro,45 Mile Hydroelectric Project,OR,Jefferson,East,44.528056,-121.152778,EBD Hydro LLC,3.0,3,2015.0,2015.0,EBD Hydro LLC,1.0
+61856.0,Solar,Vale Solar Center,OR,Malheur,East,44.157874,-117.44434,"Adapture Renewables, Inc.",3.0,1,2020.0,2020.0,"Adapture Renewables, Inc.",1.0
+66355.0,Solar,Wallace Solar LLC (CSG),OR,Polk,West,45.028153,-123.096858,SolRiver Capital LLC,3.0,1,2024.0,2024.0,SolRiver Capital LLC,1.0
+68888.0,Solar,OR - Chapman Creek - Greenkey CSG,OR,Josephine,West,42.153166,-123.623734,"Chapman Creek Solar, LLC",3.0,1,2025.0,2025.0,"Chapman Creek Solar, LLC",1.0
+64009.0,Solar,BristolSolar,OR,Marion,West,45.15,-122.79,"Adapture Renewables, Inc.",3.0,1,2021.0,2021.0,"Adapture Renewables, Inc.",1.0
+64008.0,Solar,MilfordSolar OR,OR,Washington,West,45.57,-123.05,"Adapture Renewables, Inc.",3.0,1,2021.0,2021.0,"Adapture Renewables, Inc.",1.0
+64007.0,Solar,SulusSolar28,OR,Yamhill,West,45.1,-123.52,"Adapture Renewables, Inc.",3.0,1,2020.0,2020.0,"Adapture Renewables, Inc.",1.0
+54809.0,Gas,University of Washington Power Plant,WA,King,West,47.6539,-122.3036,University of Washington,3.0,1,2023.0,2023.0,University of Washington,1.0
+61860.0,Solar,Ontario Solar Center,OR,Malheur,East,44.112841,-117.028093,"Adapture Renewables, Inc.",3.0,1,2020.0,2020.0,"Adapture Renewables, Inc.",1.0
+61855.0,Solar,Morgan Solar Center,OR,Malheur,East,43.951376,-117.07478,"Adapture Renewables, Inc.",3.0,1,2020.0,2020.0,"Adapture Renewables, Inc.",1.0
+64022.0,Solar,SulusSolar22,OR,Marion,West,44.97,-122.78,"Adapture Renewables, Inc.",3.0,1,2021.0,2021.0,"Adapture Renewables, Inc.",1.0
+57803.0,Wind,Lime Wind,OR,Baker,East,44.396944,-117.271944,Lime Wind LLC,3.0,1,2011.0,2011.0,Lime Wind LLC,1.0
+64006.0,Solar,SulusSolar33,OR,Yamhill,West,45.08,-123.4,"Adapture Renewables, Inc.",3.0,1,2021.0,2021.0,"Adapture Renewables, Inc.",1.0
+68451.0,Solar,OR - Solops - SPI 18 - Belvedere,OR,Marion,West,45.055682,-122.803442,"Belvedere Solar, LLC",3.0,1,2024.0,2024.0,"Belvedere Solar, LLC",1.0
+63969.0,Solar,SulusSolar35,OR,Clackamas,West,45.140551,-122.649655,"Adapture Renewables, Inc.",3.0,1,2020.0,2020.0,"Adapture Renewables, Inc.",1.0
+68338.0,Solar,Verde Light Community Solar,OR,Malheur,East,44.03604,-117.00367,Verde Light Community Solar LLC,3.0,1,2023.0,2023.0,Verde Light Community Solar LLC,1.0
+69519.0,Solar,Pilot Rock Solar 2,OR,Umatilla,East,45.506575,-118.830239,Pilot Rock Solar 2 LLC,3.0,1,2025.0,2025.0,Pilot Rock Solar 2 LLC,1.0
+66354.0,Solar,Sheridan Solar LLC (CSG),OR,Yamhill,West,45.101889,-123.409189,SolRiver Capital LLC,3.0,1,2024.0,2024.0,SolRiver Capital LLC,1.0
+61553.0,Solar,Klamath Falls Solar 2 CSG,OR,Klamath,East,42.183,-121.764,MN8 Energy LLC,2.9,1,2017.0,2017.0,Live Oak Banking Company,1.0
+66351.0,Solar,Marble Solar LLC (CSG),OR,Linn,West,44.629783,-123.021292,SolRiver Capital LLC,2.9,1,2024.0,2024.0,SolRiver Capital LLC,1.0
+66349.0,Solar,Green Solar LLC (CSG),OR,Jefferson,East,44.487289,-121.249736,SolRiver Capital LLC,2.9,1,2024.0,2024.0,SolRiver Capital LLC,1.0
+66378.0,Solar,Auburn Solar LLC (CSG),OR,Clackamas,West,45.392661,-122.342658,SolRiver Capital LLC,2.9,1,2024.0,2024.0,SolRiver Capital LLC,1.0
+61844.0,Solar,Brush Solar Center,OR,Baker,East,44.465334,-118.204075,"Adapture Renewables, Inc.",2.8,1,2020.0,2020.0,"Adapture Renewables, Inc.",1.0
+3024.0,Hydro,Eagle Point,OR,Jackson,West,42.514575,-122.757062,PacifiCorp,2.8,1,1957.0,1957.0,PacifiCorp,1.0
+65749.0,Solar,Linkville Solar (CSG),OR,Klamath,East,42.207661,-121.81457,"Linkville Solar, LLC",2.8,1,2024.0,2024.0,"Linkville Solar, LLC",1.0
+3853.0,Other,Crystal Mountain,WA,Pierce,West,46.953468,-121.475198,Puget Sound Energy Inc,2.7,1,1969.0,1969.0,Puget Sound Energy,1.0
+64048.0,Solar,SulusSolar29,OR,Clackamas,West,45.46,-122.29,"Adapture Renewables, Inc.",2.6,1,2020.0,2020.0,"Adapture Renewables, Inc.",1.0
+68448.0,Solar,OR - Solops - SPI 18 - Clayfield,OR,Clackamas,West,45.262227,-122.346626,"Clayfield Solar, LLC",2.6,1,2024.0,2024.0,"Clayfield Solar, LLC",1.0
+69020.0,Solar,"Waterford Solar, LLC CSG",OR,Polk,West,45.061196,-123.553807,Waterford Solar LLC,2.6,1,2025.0,2025.0,Waterford Solar LLC,1.0
+10323.0,Hydro,Copper Dam Plant,OR,Hood River,East,45.66523,-121.523761,Farmer's Irrigation District,2.6,1,2015.0,2015.0,Farmer's Irrigation District,1.0
+66368.0,Solar,NSE Astoria - Skyward,OR,Clackamas,West,45.418564,-122.277905,Standard Solar,2.5,1,2021.0,2021.0,Standard Solar,1.0
+65751.0,Solar,Sesqui-C Solar (CSG),OR,Yamhill,West,45.32543,-123.1769,"Sesqui-C Solar, LLC",2.5,1,2022.0,2022.0,"Sesqui-C Solar, LLC",1.0
+68904.0,Solar,OR - Green Key - Buckner CSG,OR,Clackamas,West,45.249161,-122.557151,"Buckner Creek Solar, LLC",2.5,1,2025.0,2025.0,"Buckner Creek Solar, LLC",1.0
+63664.0,Solar,Williams Acres Solar,OR,Marion,West,45.137,-122.799,Neighborhood Power Corp.,2.5,1,2021.0,2021.0,"Williams Acres Solar, LLC",1.0
+63663.0,Solar,Mt Hope Solar,OR,Clackamas,West,45.12795,-122.61382,Neighborhood Power Corp.,2.5,1,2021.0,2021.0,"Mt Hope Solar, LLC",1.0
+65745.0,Solar,Carnes Creek Solar (CSG),OR,Marion,West,45.075205,-122.92771,"Carnes Creek Solar, LLC",2.5,1,2022.0,2022.0,"Carnes Creek Solar, LLC",1.0
+68445.0,Solar,OR - Green Key - Gun Club,OR,Yamhill,West,45.267312,-123.014082,"Gun Club Solar, LLC",2.5,1,2024.0,2024.0,"Gun Club Solar, LLC",1.0
+65746.0,Solar,Cosper Creek Solar (CSG),OR,Polk,West,45.058,-123.499,"Cosper Creek Solar, LLC",2.5,1,2022.0,2022.0,"Cosper Creek Solar, LLC",1.0
+68508.0,Solar,Zena Solar,OR,Polk,West,45.02015,-123.09845,Zena Solar LLC,2.5,1,2024.0,2024.0,Zena Solar LLC,1.0
+70413.0,Solar,Apricus Solar LLC,OR,Polk,West,45.05854,-123.498212,"KSI III Consolidated, LLC",2.5,1,2025.0,2025.0,"KSI III Consolidated, LLC",1.0
+6507.0,Hydro,Drop 2 (WA),WA,Yakima,East,46.4492,-120.5342,Yakama Power,2.5,1,1942.0,1942.0,Yakama Power,1.0
+60057.0,Solar,"Steel Bridge Solar, LLC",OR,Polk,West,45.068,-123.47,Steel Bridge Solar. LLC,2.3,1,2016.0,2016.0,Steel Bridge Solar. LLC,1.0
+63956.0,Solar,"Palmer Creek Solar, LLC",OR,Yamhill,West,45.18484,-123.10175,Greenbacker Renewable Energy Corporation,2.3,1,2020.0,2020.0,Greenbacker Renewable Energy Corporation,1.0
+56697.0,Hydro,Potholes East Canal 66.0,WA,Franklin,East,46.378469,-119.254443,Columbia Basin Hydropower,2.3,1,1985.0,1985.0,East Columbia Basin Irr Dist,0.348
+63957.0,Solar,"Day Hill Solar, LLC",OR,Clackamas,West,45.26866,-122.32942,Greenbacker Renewable Energy Corporation,2.3,1,2020.0,2020.0,Greenbacker Renewable Energy Corporation,1.0
+9842.0,Hydro,Newhalem,WA,Whatcom,West,48.675944,-121.240826,City of Seattle - (WA),2.3,1,1970.0,1970.0,City of Seattle - (WA),1.0
+70411.0,Solar,Rodeo Solar LLC (OR),OR,Clackamas,West,45.114178,-122.635045,"KSI III Consolidated, LLC",2.3,1,2025.0,2025.0,"KSI III Consolidated, LLC",1.0
+68444.0,Solar,Antelope Creek,OR,Jackson,West,42.468,-122.833,"Antelope Creek Solar, LLC",2.3,1,2024.0,2024.0,"Antelope Creek Solar, LLC",1.0
+68978.0,Solar,Sunset Ridge Solar (CSG),OR,Klamath,East,42.281127,-121.81241,Sunset Ridge Solar LLC,2.3,1,2025.0,2025.0,Sunset Ridge Solar LLC,1.0
+68463.0,Solar,Orchard Knob,OR,Polk,West,44.947,-123.31,Orchard Knob Solar LLC,2.3,1,2025.0,2025.0,Orchard Knob Solar LLC,1.0
+68550.0,Solar,Kelly Creek Solar,OR,Josephine,West,42.133852,-123.630257,"Kelly Creek Solar, LLC",2.3,1,2025.0,2025.0,"Kelly Creek Solar, LLC",1.0
+61338.0,Solar,Mill Creek Solar (OR),OR,Yamhill,West,45.16964,-123.13633,SunStrong Management,2.2,1,2017.0,2017.0,SunStrong Management,1.0
+61828.0,Solar,Valley Creek Solar,OR,Polk,West,45.033,-123.094,SunStrong Management,2.2,1,2017.0,2017.0,SunStrong Management,1.0
+61827.0,Solar,Dayton Cutoff Solar,OR,Yamhill,West,45.17,-123.135,SunStrong Management,2.2,1,2017.0,2017.0,SunStrong Management,1.0
+50382.0,Hydro,Twin Reservoirs,WA,Walla Walla,East,46.088333,-118.254722,City of Walla Walla - (WA),2.2,1,1988.0,1988.0,City of Walla Walla - (WA),1.0
+64034.0,Solar,SulusSolar25,OR,Marion,West,45.27,-122.82,"Adapture Renewables, Inc.",2.2,1,2020.0,2020.0,"Adapture Renewables, Inc.",1.0
+61830.0,Solar,Sheep Solar,OR,Marion,West,44.826,-122.949,SunStrong Management,2.2,1,2017.0,2017.0,SunStrong Management,1.0
+56016.0,Gas,Grimes Way,WA,Whitman,East,46.7289,-117.1514,Washington State University,2.2,2,2005.0,2005.0,Washington State University,1.0
+56696.0,Hydro,Eltopia Branch Canal 4.6,WA,Franklin,East,46.378381,-119.254522,Columbia Basin Hydropower,2.2,1,1983.0,1983.0,East Columbia Basin Irr Dist,0.318
+63443.0,Solar,Thomas Creek Solar,OR,Clackamas,West,45.131407,-122.619475,Neighborhood Power Corp.,2.2,1,2019.0,2019.0,"Thomas Creek Solar, LLC",1.0
+61829.0,Solar,Silverton Solar,OR,Marion,West,45.014,-122.807,SunStrong Management,2.2,1,2017.0,2017.0,SunStrong Management,1.0
+65228.0,Solar,Red Prairie Solar,OR,Yamhill,West,45.087389,-123.417361,"TLS Capital, Inc",2.2,1,2021.0,2021.0,"Red Prairie Solar, LLC",1.0
+61831.0,Solar,Colton Solar,OR,Clackamas,West,45.17,-122.473,SunStrong Management,2.2,1,2017.0,2017.0,SunStrong Management,1.0
+63206.0,Solar,Rafael Solar,OR,Marion,West,44.859838,-123.007913,Rafael Solar LLC,2.2,1,2019.0,2019.0,Rafael Solar LLC,1.0
+63456.0,Solar,St Louis Solar,OR,Marion,West,45.11994,-122.9361,Neighborhood Power Corp.,2.2,1,2020.0,2020.0,"St Louis Solar, LLC",1.0
+63462.0,Solar,Pika Solar,OR,Marion,West,45.089244,-122.7705,SunStrong Management,2.2,1,2020.0,2020.0,SunStrong Management,1.0
+63464.0,Solar,Brush Creek Solar,OR,Marion,West,44.984217,-122.813127,SunStrong Management,2.2,1,2020.0,2020.0,SunStrong Management,1.0
+63465.0,Solar,Minke Solar,OR,Clackamas,West,45.172332,-122.622665,SunStrong Management,2.2,1,2020.0,2020.0,SunStrong Management,1.0
+63466.0,Solar,Drift Creek Solar,OR,Marion,West,44.970572,-122.803509,SunStrong Management,2.2,1,2020.0,2020.0,SunStrong Management,1.0
+63467.0,Solar,Bighorn Solar,OR,Marion,West,44.965702,-122.954234,SunStrong Management,2.2,1,2020.0,2020.0,SunStrong Management,1.0
+63235.0,Solar,O'Neill Creek Solar,OR,Washington,West,45.472,-123.129,O'Neill Creek Solar LLC,2.2,1,2019.0,2019.0,O'Neill Creek Solar LLC,1.0
+63208.0,Solar,Kale Patch Solar,OR,Marion,West,45.083,-122.904,Kale Patch Solar LLC,2.2,1,2019.0,2019.0,Kale Patch Solar LLC,1.0
+61832.0,Solar,Interstate Solar,OR,Marion,West,45.129,-122.899,SunStrong Management,2.2,1,2017.0,2017.0,SunStrong Management,1.0
+63207.0,Solar,Case Creek Solar,OR,Marion,West,45.172,-122.912,Case Creek Solar LLC,2.2,1,2019.0,2019.0,Case Creek Solar LLC,1.0
+62171.0,Solar,Labish Solar LLC,OR,Marion,West,45.023,-122.922,Labish Solar LLC,2.2,1,2018.0,2018.0,Labish Solar LLC,1.0
+61835.0,Solar,Grand Ronde Solar,OR,Polk,West,45.054,-123.61,SunStrong Management,2.2,1,2017.0,2017.0,SunStrong Management,1.0
+62169.0,Solar,Boring Solar LLC,OR,Clackamas,West,45.431,-122.285,Boring Solar LLC,2.2,1,2019.0,2019.0,Boring Solar LLC,1.0
+62170.0,Solar,Ballston Solar LLC,OR,Yamhill,West,45.077,-123.395,Ballston Solar LLC,2.2,1,2018.0,2018.0,Ballston Solar LLC,1.0
+69408.0,Solar,Burlingame Solar Community Solar,OR,Linn,West,44.387836,-123.012611,"Burlingame Solar, LLC",2.1,1,2025.0,2025.0,"Burlingame Solar, LLC",1.0
+65748.0,Solar,Kaiser Creek Solar (CSG),OR,Clackamas,West,45.143,-122.609,"Kaiser Creek Solar, LLC",2.0,1,2022.0,2022.0,"Kaiser Creek Solar, LLC",1.0
+63958.0,Solar,"SSD Marion 3, LLC",OR,Marion,West,44.985,-122.938,"Thor Solar 1 CEI, LLC",2.0,1,2020.0,2020.0,"Thor Solar 1 CEI, LLC",1.0
+58150.0,Solar,Black Cap Solar Plant,OR,Lake,East,42.17505,-120.362631,PacifiCorp,2.0,1,2012.0,2012.0,PacifiCorp,1.0
+63960.0,Solar,"SSD Marion 6, LLC",OR,Marion,West,45.254,-122.806,"Thor Solar 1 CEI, LLC",2.0,1,2020.0,2020.0,"Thor Solar 1 CEI, LLC",1.0
+67980.0,Solar,Mompano,OR,Clackamas,West,45.296464,-122.511376,Mompano,2.0,1,2025.0,2025.0,Mompano,1.0
+63962.0,Solar,"SSD Clackamas 4, LLC",OR,Clackamas,West,45.102,-122.662,"Thor Solar 1 CEI, LLC",2.0,1,2020.0,2020.0,"Thor Solar 1 CEI, LLC",1.0
+63963.0,Solar,"SSD Clackamas 7, LLC",OR,Clackamas,West,45.182,-122.591,"Thor Solar 1 CEI, LLC",2.0,1,2020.0,2020.0,"Thor Solar 1 CEI, LLC",1.0
+69518.0,Solar,Pilot Rock Solar 1,OR,Umatilla,East,45.505603,-118.83084,Pilot Rock Solar 1 LLC,2.0,1,2025.0,2025.0,Pilot Rock Solar 1 LLC,1.0
+68450.0,Solar,OR - Solops - SPI 18 - Dover,OR,Clackamas,West,45.208889,-122.675834,"Dover Solar, LLC",2.0,1,2024.0,2024.0,"Dover Solar, LLC",1.0
+63964.0,Solar,"SSD Marion 1, LLC",OR,Marion,West,45.139507,-122.904499,"Thor Solar 1 CEI, LLC",2.0,1,2020.0,2020.0,"Thor Solar 1 CEI, LLC",1.0
+60444.0,Batteries,Glacier Battery Storage,WA,Whatcom,West,48.88804,-121.9462,Puget Sound Energy Inc,2.0,1,2016.0,2016.0,Puget Sound Energy,1.0
+50360.0,Hydro,Michell Butte Power Project,OR,Malheur,East,43.771896,-117.155023,Owyhee Irrigation District,2.0,2,1989.0,1989.0,Owyhee Irrigation District,1.0
+63959.0,Solar,"SSD Marion 5, LLC",OR,Marion,West,45.11601,-122.793791,"Thor Solar 1 CEI, LLC",2.0,1,2020.0,2020.0,"Thor Solar 1 CEI, LLC",1.0
+68446.0,Solar,OR - Green Key - Marquam,OR,Clackamas,West,45.082793,-122.667312,"Marquam Creek Solar, LLC",1.9,1,2024.0,2024.0,"Marquam Creek Solar, LLC",1.0
+65750.0,Solar,Sandy River Solar (CSG),OR,Clackamas,West,45.431055,-122.29516,"Sandy River Solar, LLC",1.9,1,2022.0,2022.0,"Sandy River Solar, LLC",1.0
+63442.0,Solar,Tickle Creek Solar,OR,Clackamas,West,45.375,-122.265,Neighborhood Power Corp.,1.9,1,2019.0,2019.0,"Tickle Creek Solar, LLC",1.0
+63665.0,Solar,River Valley Solar,OR,Marion,West,45.128,-122.828,Neighborhood Power Corp.,1.9,1,2022.0,2022.0,"River Valley Solar, LLC",1.0
+65747.0,Solar,Fruitland Creek Solar (CSG),OR,Marion,West,44.93013,-122.9375,"Fruitland Creek Solar, LLC",1.8,1,2022.0,2022.0,"Fruitland Creek Solar, LLC",1.0
+63642.0,Solar,Dunn Road Solar,OR,Clackamas,West,45.431,-122.286,Neighborhood Power Corp.,1.8,1,2021.0,2021.0,"Dunn Road Solar, LLC",1.0
+10324.0,Hydro,Peters Drive Plant,OR,Hood River,East,45.66764,-121.548455,Farmer's Irrigation District,1.8,1,1987.0,1987.0,Farmer's Irrigation District,1.0
+3868.0,Hydro,Meyers Falls,WA,Stevens,East,48.5953,-118.0603,Hydro Technology Systems Inc,1.8,4,1915.0,2006.0,Hydro Technology Systems Inc,1.0
+56016.0,Other,Grimes Way,WA,Whitman,East,46.7289,-117.1514,Washington State University,1.8,1,2005.0,2005.0,Washington State University,1.0
+50423.0,Hydro,Cowiche,WA,Yakima,East,46.692628,-120.737194,Yakima-Tieton Irrigation Dist,1.7,1,1987.0,1987.0,Yakima-Tieton Irrigation Dist,1.0
+56968.0,Wind,Big Top LLC,OR,Morrow,East,45.655,-119.4647,CR51 Inc.,1.7,1,2009.0,2009.0,"Big Top, LLC",1.0
+58961.0,Solar,Oregon University System OIT Klamath Fal,OR,Klamath,East,42.254167,-121.785,Tesla Inc.,1.7,1,2014.0,2014.0,Tesla Inc.,1.0
+57911.0,Other,Roseburg LFG,OR,Douglas,West,43.186111,-123.380278,Roseburg LFG Energy LLC,1.6,1,2011.0,2011.0,Roseburg LFG Energy LLC,1.0
+60263.0,Other,Durham AWTF,OR,Washington,West,45.400524,-122.765822,Clean Water Services,1.6,2,2015.0,2015.0,Clean Water Services,1.0
+59704.0,Other,"Shell New Energies, Junction City",OR,Lane,West,44.183526,-123.200454,Equilon Enterprises LLC d/b/a Shell Oil,1.6,1,2011.0,2011.0,Equilon Enterprises LLC d/b/a Shell Oil,1.0
+50228.0,Hydro,Rocky Brook Hydroelectric,WA,Jefferson,West,47.7197,-122.9431,Rocky Brook Electric Inc,1.6,1,1985.0,1985.0,Rocky Brook Electric Inc,1.0
+50091.0,Hydro,Sheep Creek Hydro,WA,Stevens,East,48.947741,-117.795376,Sheep Creek Hydro Inc,1.6,2,1986.0,1986.0,Sheep Creek Hydro Inc,1.0
+6508.0,Hydro,Drop 3 (WA),WA,Yakima,East,46.423133,-120.559997,Yakama Power,1.6,2,1932.0,1932.0,Yakama Power,1.0
+50421.0,Hydro,Orchard Avenue 1,WA,Yakima,East,46.596413,-120.677489,Yakima-Tieton Irrigation Dist,1.6,2,1987.0,1987.0,Yakima-Tieton Irrigation Dist,1.0
+50938.0,Hydro,Galesville Project,OR,Douglas,West,42.8489,-123.1778,Douglas County - (OR),1.6,2,1987.0,1987.0,Douglas County - (OR),1.0
+57372.0,Solar,Bellevue Solar Project,OR,Yamhill,West,45.112222,-123.234722,"EDF Renewable Asset Holdings, Inc.",1.6,1,2011.0,2011.0,enXco Development Corporation,1.0
+58696.0,Hydro,Nooksack Hydro,WA,Whatcom,West,48.907778,-121.814167,Puget Sound Hydro LLC,1.5,1,1906.0,1906.0,Puget Sound Hydro LLC,1.0
+68462.0,Solar,Pine Grove - (OR),OR,Klamath,East,42.186,-121.687,Pine Grove Solar LLC,1.4,1,2025.0,2025.0,Pine Grove Solar LLC,1.0
+50700.0,Hydro,Lilliwaup Falls Generating,WA,Mason,West,47.4706,-123.1153,William G. Reed Jr,1.4,7,1986.0,1986.0,William G. Reed Jr,1.0
+68320.0,Solar,Blackwell Creek Solar,OR,Jackson,West,42.404138,-123.008306,Blackwell Creek Solar LLC,1.4,1,2024.0,2024.0,Blackwell Creek Solar LLC,1.0
+57882.0,Solar,Baldock Solar Highway,OR,Clackamas,West,45.269444,-122.771667,Portland General Electric Co,1.4,1,2012.0,2012.0,Portland General Electric,1.0
+60112.0,Solar,Oregon Convention Center,OR,Multnomah,West,45.528457,-122.66317,Tesla Inc.,1.4,1,2016.0,2016.0,Tesla Inc.,1.0
+68449.0,Solar,OR -Solops - SPI 18 - Cork,OR,Clackamas,West,45.127552,-122.55742,"Cork Solar, LLC",1.3,1,2024.0,2024.0,"Cork Solar, LLC",1.0
+64033.0,Solar,GreenparkSolar,OR,Marion,West,44.879414,-122.937451,"Adapture Renewables, Inc.",1.3,1,2020.0,2020.0,"Adapture Renewables, Inc.",1.0
+60868.0,Hydro,Timothy Lake Powerhouse,OR,Clackamas,West,45.370546,-121.756527,Portland General Electric Co,1.2,1,2018.0,2018.0,Portland General Electric,1.0
+59790.0,Solar,Oregon University System Rabbit Field,OR,Benton,West,44.573484,-123.31695,Tesla Inc.,1.2,1,2014.0,2014.0,Tesla Inc.,1.0
+10737.0,Hydro,Sprague Hydro,OR,Klamath,East,42.50136,-120.98944,Sprague Hydro LLC,1.2,1,1989.0,1989.0,Sprague Hydro LLC,1.0
+64663.0,Other,WLWPCF Cogeneration Facility,OR,Marion,West,45.00812,-123.05286,City of Salem Public Works - (OR),1.2,1,2020.0,2020.0,City of Salem Public Works - (OR),1.0
+6484.0,Hydro,Bend,OR,Deschutes,East,44.062326,-121.313331,PacifiCorp,1.1,3,1913.0,1917.0,PacifiCorp,1.0
+58470.0,Hydro,C-Drop Hydro,OR,Klamath,East,42.165833,-121.685,C-Drop,1.1,1,2012.0,2012.0,C-Drop,1.0
+69210.0,Solar,Salem Henningsen,OR,Marion,West,44.890515,-122.972048,Lineage Logistics Solar PV - Salem OR,1.1,1,2024.0,2024.0,Lineage Logistics Solar PV - Salem OR,1.0
+3041.0,Hydro,Wallowa Falls,OR,Wallowa,East,45.266702,-117.212732,PacifiCorp,1.1,1,1921.0,1921.0,PacifiCorp,1.0
+52155.0,Hydro,Lacomb Irrigation District,OR,Linn,West,44.597518,-122.685441,Lacomb Irrigation Dist,1.0,1,1986.0,1986.0,Lacomb Irrigation Dist,1.0
+64446.0,Batteries,Arlington Microgrid,WA,Snohomish,West,48.15614,-122.1502,PUD No 1 of Snohomish County - (WA),1.0,1,2021.0,2021.0,PUD No 1 of Snohomish County - (WA),1.0
+64198.0,Batteries,"Horn Rapids Solar, Storage and Training",WA,Benton,East,46.3529,-119.3222,Energy Northwest,1.0,1,2020.0,2020.0,Energy Northwest,1.0
+56932.0,Other,Biotech LS 0836,WA,Whitman,East,46.7331,-117.1583,Washington State University,1.0,1,2009.0,2009.0,Washington State University,1.0
+69210.0,Batteries,Salem Henningsen,OR,Marion,West,44.890515,-122.972048,Lineage Logistics Solar PV - Salem OR,1.0,1,2024.0,2024.0,Lineage Logistics Solar PV - Salem OR,1.0
+68464.0,Solar,Round Lake,OR,Klamath,East,42.128,-121.907,Round Lake Solar LLC,1.0,1,2024.0,2024.0,Round Lake Solar LLC,1.0
+7259.0,Hydro,Skookumchuck,WA,Thurston,West,46.7844,-122.7197,TransAlta Centralia Gen LLC,1.0,1,1990.0,1990.0,TransAlta Centralia Gen LLC,1.0
+57652.0,Solar,Yamhill Solar LLC,OR,Yamhill,West,45.108889,-123.278611,Standard Solar,1.0,1,2011.0,2011.0,Standard Solar,1.0
+69682.0,Solar,Goodling Community Solar,OR,Multnomah,West,45.590001,-122.634507,Bonneville Environmental Foundation (BEF),1.0,1,2025.0,2025.0,Bonneville Environmental Foundation (BEF),1.0
+3035.0,Hydro,Prospect 4,OR,Jackson,West,42.733073,-122.515079,PacifiCorp,1.0,1,1944.0,1944.0,PacifiCorp,1.0
+58591.0,Other,POTB Digester,OR,Tillamook,West,45.414444,-123.804167,"Tillamook BioGas, LLC Digester ",1.0,1,2013.0,2013.0,"Tillamook BioGas, LLC Digester ",1.0
+64446.0,Solar,Arlington Microgrid,WA,Snohomish,West,48.15614,-122.1502,PUD No 1 of Snohomish County - (WA),0.5,1,2019.0,2019.0,PUD No 1 of Snohomish County - (WA),1.0
+56322.0,Solar,Wild Horse,WA,Kittitas,East,47.036269,-120.206494,Puget Sound Energy Inc,0.5,1,2007.0,2007.0,Puget Sound Energy,1.0
