@@ -230,13 +230,14 @@ toggle.onclick = () => setPanel(panel.classList.contains("closed"));
 setPanel(!window.matchMedia("(max-width: 700px)").matches);
 
 // ---------- Map
+const ORWA = [[-124.9, 41.9], [-116.4, 49.1]];  // Oregon and Washington
+const viewPadding = () => window.innerWidth > 700
+  ? { top: 30, bottom: 70, left: 360, right: 30 }     // room for the legend panel
+  : { top: 20, bottom: 130, left: 10, right: 10 };    // phones: room for the bottom sheet
 const map = new maplibregl.Map({
   container: "map",
-  bounds: [[-124.9, 41.9], [-116.4, 49.1]],
-  fitBoundsOptions: { padding: window.innerWidth > 700
-    ? { top: 30, bottom: 70, left: 360, right: 30 }
-    : { top: 20, bottom: 130, left: 10, right: 10 } },  // phones: leave room for the bottom sheet
-  maxBounds: [[-130, 39], [-111, 51.5]],
+  bounds: ORWA,
+  fitBoundsOptions: { padding: viewPadding() },
   attributionControl: { compact: true },
   style: {
     version: 8,
@@ -257,8 +258,33 @@ const map = new maplibregl.Map({
   },
 });
 map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+// Zoom and pan limits. The farthest you can zoom out is a little past the view that
+// fits Oregon and Washington, so the neighbors show at the edges but nothing beyond.
+// Panning stays within that zoomed-out view. Recomputed when the window changes size.
+const lngToX = (lng) => (lng + 180) / 360;
+const latToY = (lat) => (1 - Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360)) / Math.PI) / 2;
+const xToLng = (x) => x * 360 - 180;
+const yToLat = (y) => (360 / Math.PI) * Math.atan(Math.exp(Math.PI * (1 - 2 * y))) - 90;
+function setLimits() {
+  // Fit the two states with a thin margin on the whole screen. The legend can be
+  // hidden, so it doesn't count here; otherwise a narrow window could zoom out far.
+  const cam = map.cameraForBounds(ORWA, { padding: 24 });
+  if (!cam) return;
+  const minZoom = cam.zoom - 0.15;
+  const { width, height } = map.getContainer().getBoundingClientRect();
+  const world = 512 * 2 ** minZoom;
+  const center = maplibregl.LngLat.convert(cam.center);
+  const cx = lngToX(center.lng), cy = latToY(center.lat);
+  const hw = (width / world / 2) * 1.04, hh = (height / world / 2) * 1.04;
+  map.setMaxBounds(null);
+  map.setMinZoom(minZoom);
+  map.setMaxBounds([[xToLng(cx - hw), yToLat(cy + hh)], [xToLng(cx + hw), yToLat(cy - hh)]]);
+}
+setLimits();
+map.once("style.load", setLimits);
 // Redraw at the right size if the page loads hidden or in a frame that resizes.
-new ResizeObserver(() => map.resize()).observe(document.getElementById("map"));
+new ResizeObserver(() => { map.resize(); setLimits(); }).observe(document.getElementById("map"));
+window.addEventListener("resize", setLimits);
 map.addControl(new maplibregl.ScaleControl({ unit: "imperial" }), "bottom-right");
 
 const fmt = (n) => Math.round(n).toLocaleString("en-US");
