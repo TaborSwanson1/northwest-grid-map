@@ -18,7 +18,7 @@ CLEAN = ROOT / "data" / "clean"
 OUT = ROOT / "docs" / "data"
 NE = RAW / "natural_earth"
 
-VIEW = box(-127.5, 40.3, -114.0, 50.2)  # a bit bigger than anything the map shows
+VIEW = box(-131.0, 38.5, -110.0, 52.5)  # covers everything the map can pan to (maxBounds)
 METERS = "EPSG:5070"
 
 # Owner colors on the map: Avangrid plus the four biggest wind, solar and battery

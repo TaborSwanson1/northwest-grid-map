@@ -44,7 +44,18 @@
   .owners .av { font-weight: 700; }
   .foot { font-size: 11px; color: var(--muted); line-height: 1.45; margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; }
   .foot a { color: var(--muted); }
-  #toggle { display: none; }
+  #toggle {
+    position: absolute; right: 12px; top: 12px; border: 0; background: #eef1f4; color: var(--ink);
+    border-radius: 6px; padding: 5px 10px; font-size: 13px; cursor: pointer;
+  }
+  #toggle:hover { background: #e2e6ea; }
+  h1 { padding-right: 96px; }
+  /* Minimized on a computer: just the title and the button. */
+  @media (min-width: 701px) {
+    #panel.closed { width: auto; padding-bottom: 12px; }
+    #panel.closed > :not(h1):not(#toggle) { display: none; }
+    #panel.closed h1 { margin: 0; }
+  }
 
   .maplibregl-popup-content { font-size: 13px; line-height: 1.4; padding: 10px 12px; border-radius: 8px; max-width: 280px; }
   .maplibregl-popup-content h3 { font-size: 14px; margin: 0 0 4px; }
@@ -53,15 +64,15 @@
   @media (max-width: 700px) {
     #panel { top: auto; bottom: 0; left: 0; right: 0; width: auto; max-height: 55%; border-radius: 12px 12px 0 0; padding: 12px 16px; }
     #panel.closed { max-height: 118px; overflow: hidden; }
-    #toggle { display: block; position: absolute; right: 12px; top: 10px; border: 0; background: #f3f5f7; border-radius: 6px; padding: 4px 10px; font-size: 13px; }
-    h1 { font-size: 18px; padding-right: 70px; }
+    #toggle { top: 10px; }
+    h1 { font-size: 18px; }
   }
 </style>
 </head>
 <body>
 <div id="map"></div>
 <div id="panel">
-  <button id="toggle" type="button">Layers</button>
+  <button id="toggle" type="button" aria-controls="panel" aria-expanded="true">Hide</button>
   <h1>Power Over the Cascades</h1>
   <p class="lede">Oregon and Washington make most of their power east of the mountains and use it west of them. A handful of big lines carry it over the Cascades, and one DC line sends it to Los Angeles.</p>
   <div class="stats">
@@ -207,8 +218,16 @@ for (const [vc, label, color, width, on] of VOLTS) {
     <span class="lineswatch" style="border-top:${Math.max(width, 1.5)}px ${dash} ${color}"></span>${label}`;
   voltEl.appendChild(l);
 }
-document.getElementById("toggle").onclick = () => document.getElementById("panel").classList.toggle("closed");
-if (window.matchMedia("(max-width: 700px)").matches) document.getElementById("panel").classList.add("closed");
+// Minimize or open the legend. Phones start minimized so the map shows first.
+const panel = document.getElementById("panel");
+const toggle = document.getElementById("toggle");
+function setPanel(open) {
+  panel.classList.toggle("closed", !open);
+  toggle.textContent = open ? "Hide" : "Show legend";
+  toggle.setAttribute("aria-expanded", String(open));
+}
+toggle.onclick = () => setPanel(panel.classList.contains("closed"));
+setPanel(!window.matchMedia("(max-width: 700px)").matches);
 
 // ---------- Map
 const map = new maplibregl.Map({

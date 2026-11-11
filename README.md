@@ -4,6 +4,8 @@ Work in progress. A map of where Oregon and Washington make their power, where t
 
 **Finding so far:** 76% of the two states' power plant capacity is east of the Cascades, and 81% of people live west of them.
 
+![Poster](charts/poster.png)
+
 ## How to run it
 
 ```bash
@@ -12,6 +14,8 @@ cd src
 ../.venv/bin/python fetch.py     # downloads raw data into data/raw
 ../.venv/bin/python plants.py    # data/clean/plants.csv, plant_owners.csv
 ../.venv/bin/python lines.py     # data/clean/lines.geojson, substations.geojson
+../.venv/bin/python build_web.py # docs/data, the layers the web map loads
+../.venv/bin/python poster.py    # charts/poster.png
 ```
 
 ## Sources

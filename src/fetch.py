@@ -121,8 +121,40 @@ OSM_LINES = f'[out:json][timeout:300];{AREA}way["power"="line"](area.a);out tags
 OSM_SUBS = f'[out:json][timeout:300];{AREA}nwr["power"="substation"](area.a);out tags center;'
 
 
+# Elevation tiles (AWS Terrain Tiles, Terrarium encoding) for the poster's hillshade.
+TERRAIN_URL = "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+TERRAIN_ZOOM = 8
+TERRAIN_BOX = (-125.4, 41.6, -116.0, 49.4)  # lon/lat, a bit past OR and WA
+
+
+def tile_xy(lon, lat, z):
+    """Web Mercator tile that contains a lon/lat point."""
+    import math
+    n = 2 ** z
+    x = int((lon + 180) / 360 * n)
+    y = int((1 - math.asinh(math.tan(math.radians(lat))) / math.pi) / 2 * n)
+    return x, y
+
+
+def terrain():
+    z = TERRAIN_ZOOM
+    x0, y0 = tile_xy(TERRAIN_BOX[0], TERRAIN_BOX[3], z)
+    x1, y1 = tile_xy(TERRAIN_BOX[2], TERRAIN_BOX[1], z)
+    todo = [(x, y) for x in range(x0, x1 + 1) for y in range(y0, y1 + 1)]
+    got = 0
+    for x, y in todo:
+        path = RAW / "terrain" / str(z) / f"{x}_{y}.png"
+        if path.exists() and not FORCE:
+            continue
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(get(TERRAIN_URL.format(z=z, x=x, y=y)).content)
+        got += 1
+    print(f"terrain z{z}: {len(todo)} tiles ({got} downloaded)")
+
+
 if __name__ == "__main__":
     eia860()
+    terrain()
     save_bytes(RAW / "co-est2025-alldata.csv", CENSUS_POP)
     save_bytes(RAW / "cb_2024_us_state_5m.zip", CENSUS_STATES)
     save_bytes(RAW / "cb_2024_us_county_5m.zip", CENSUS_COUNTIES)
