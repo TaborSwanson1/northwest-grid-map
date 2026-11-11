@@ -28,6 +28,16 @@ CENSUS_COUNTIES = "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_cou
 HIFLD_LINES = ("https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/"
                "US_Electric_Power_Transmission_Lines/FeatureServer/0/query")
 OVERPASS = "https://overpass-api.de/api/interpreter"
+# Natural Earth (public domain): land, water and cities for the base map.
+NE_URL = "https://naciscdn.org/naturalearth/10m/{kind}/{name}.zip"
+NATURAL_EARTH = {
+    "ne_10m_land": "physical",
+    "ne_10m_lakes": "physical",
+    "ne_10m_rivers_lake_centerlines": "physical",
+    "ne_10m_rivers_north_america": "physical",
+    "ne_10m_populated_places_simple": "cultural",
+    "ne_10m_admin_1_states_provinces_lines": "cultural",
+}
 
 
 def need(path):
@@ -116,6 +126,8 @@ if __name__ == "__main__":
     save_bytes(RAW / "co-est2025-alldata.csv", CENSUS_POP)
     save_bytes(RAW / "cb_2024_us_state_5m.zip", CENSUS_STATES)
     save_bytes(RAW / "cb_2024_us_county_5m.zip", CENSUS_COUNTIES)
+    for name, kind in NATURAL_EARTH.items():
+        save_bytes(RAW / "natural_earth" / f"{name}.zip", NE_URL.format(kind=kind, name=name))
     hifld_lines()
     overpass(RAW / "osm_lines.json", OSM_LINES)
     overpass(RAW / "osm_substations.json", OSM_SUBS)

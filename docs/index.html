@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Power Over the Cascades</title>
+<meta name="description" content="Where Oregon and Washington make their power, where they use it, and the lines between.">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<style>
+  :root {
+    --ink: #1f2328;
+    --muted: #5b636d;
+    --line: #d9dde2;
+    --panel: rgba(255, 255, 255, 0.96);
+    --avangrid: #e0482b;
+    --dc: #7b2cbf;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; font-family: "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: #e9eef2; }
+  #map { position: absolute; inset: 0; }
+
+  #panel {
+    position: absolute; top: 12px; left: 12px; width: 330px; max-height: calc(100% - 24px);
+    overflow-y: auto; background: var(--panel); border-radius: 10px;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.15); padding: 16px 18px 14px; z-index: 2;
+  }
+  h1 { font-size: 21px; margin: 0 0 6px; letter-spacing: -0.2px; }
+  .lede { font-size: 14px; line-height: 1.45; margin: 0 0 12px; color: var(--ink); }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  .stat { background: #f3f5f7; border-radius: 8px; padding: 8px 10px; }
+  .stat b { display: block; font-size: 24px; }
+  .stat span { font-size: 12px; color: var(--muted); line-height: 1.3; display: block; }
+  h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); margin: 14px 0 6px; }
+  .rows { display: grid; gap: 3px; }
+  label.row { display: flex; align-items: center; gap: 8px; font-size: 13px; cursor: pointer; padding: 2px 0; }
+  label.row input { margin: 0; accent-color: #444; }
+  .row .note { margin-left: auto; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .swatch { width: 12px; height: 12px; border-radius: 50%; flex: none; }
+  .lineswatch { width: 26px; height: 0; flex: none; border-top: 3px solid #333; }
+  canvas.icon { width: 18px; height: 18px; flex: none; }
+  .owners { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 10px; font-size: 13px; }
+  .owners div { display: flex; align-items: center; gap: 6px; }
+  .owners .av { font-weight: 700; }
+  .foot { font-size: 11px; color: var(--muted); line-height: 1.45; margin-top: 14px; border-top: 1px solid var(--line); padding-top: 10px; }
+  .foot a { color: var(--muted); }
+  #toggle { display: none; }
+
+  .maplibregl-popup-content { font-size: 13px; line-height: 1.4; padding: 10px 12px; border-radius: 8px; max-width: 280px; }
+  .maplibregl-popup-content h3 { font-size: 14px; margin: 0 0 4px; }
+  .maplibregl-popup-content .k { color: var(--muted); }
+
+  @media (max-width: 700px) {
+    #panel { top: auto; bottom: 0; left: 0; right: 0; width: auto; max-height: 55%; border-radius: 12px 12px 0 0; padding: 12px 16px; }
+    #panel.closed { max-height: 118px; overflow: hidden; }
+    #toggle { display: block; position: absolute; right: 12px; top: 10px; border: 0; background: #f3f5f7; border-radius: 6px; padding: 4px 10px; font-size: 13px; }
+    h1 { font-size: 18px; padding-right: 70px; }
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="panel">
+  <button id="toggle" type="button">Layers</button>
+  <h1>Power Over the Cascades</h1>
+  <p class="lede">Oregon and Washington make most of their power east of the mountains and use it west of them. A handful of big lines carry it over the Cascades, and one DC line sends it to Los Angeles.</p>
+  <div class="stats">
+    <div class="stat"><b>76%</b><span>of power plant capacity is east of the Cascades</span></div>
+    <div class="stat"><b>81%</b><span>of people live west of them</span></div>
+  </div>
+
+  <h2>Who owns the wind and solar</h2>
+  <div class="owners" id="owners"></div>
+
+  <h2>Power plants</h2>
+  <div class="rows" id="types"></div>
+
+  <h2>Transmission lines</h2>
+  <div class="rows" id="voltages"></div>
+
+  <h2>Other layers</h2>
+  <div class="rows">
+    <label class="row"><input type="checkbox" id="subs" checked> Substations at the voltages shown</label>
+    <label class="row"><input type="checkbox" id="split" checked> West/east county line</label>
+    <label class="row"><input type="checkbox" id="pop"> People per square mile, by county</label>
+  </div>
+
+  <div class="foot">
+    Plant size is nameplate capacity. Sides of the Cascades are by county. Owner colors use the parent company of the biggest share.
+    Sources: EIA-860 (2025); HIFLD transmission lines (archived, last checked 2018) checked against
+    <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>; Census 2025 estimates; BPA; Natural Earth; terrain from AWS Terrain Tiles.
+    <a href="https://github.com/TaborSwanson1/northwest-grid-map">Code and data</a>.
+  </div>
+</div>
+
+<script>
+const OWNERS = [
+  ["Avangrid", "#e0482b", "Avangrid"],
+  ["Portland General Electric", "#6f93c4", "Portland General"],
+  ["NextEra Energy Resources", "#86b06d", "NextEra"],
+  ["Brookfield Renewable", "#5fb0b3", "Brookfield"],
+  ["Puget Sound Energy", "#d2ad57", "Puget Sound Energy"],
+  ["Other", "#8c8f94", "Everyone else"],
+];
+// Map types from the data to icons.
+const TYPES = [
+  ["wind", "Wind", ["Wind"]],
+  ["hydro", "Hydro", ["Hydro", "Pumped storage"]],
+  ["solar", "Solar", ["Solar"]],
+  ["gas", "Gas", ["Gas"]],
+  ["battery", "Batteries", ["Batteries"]],
+  ["nuclear", "Nuclear", ["Nuclear"]],
+  ["other", "Coal and other", ["Coal", "Other"]],
+];
+// Voltage classes, biggest first. AC lines get darker and wider as voltage rises.
+const VOLTS = [
+  ["DC", "DC (±500 kV)", "#7b2cbf", 3.2, true, 500],
+  ["500", "500 kV AC", "#2b2d42", 2.4, true, 500],
+  ["345", "345 kV AC", "#4a4e69", 1.8, false, 345],
+  ["220-287", "230 to 287 kV AC", "#6c7086", 1.3, false, 230],
+  ["100-161", "115 to 161 kV AC", "#8d91a3", 0.9, false, 100],
+  ["UNDER 100", "Under 100 kV AC", "#aeb1bd", 0.6, false, 0],
+];
+
+// ---------- Icons: white shapes drawn on a canvas, used as SDF so the map can color them.
+function drawIcon(ctx, kind, s) {
+  ctx.clearRect(0, 0, s, s);
+  ctx.fillStyle = "#fff"; ctx.strokeStyle = "#fff";
+  const c = s / 2;
+  ctx.beginPath();
+  if (kind === "wind") {
+    ctx.lineWidth = s * 0.09; ctx.lineCap = "round";
+    ctx.moveTo(c, c); ctx.lineTo(c, s * 0.95); ctx.stroke();
+    for (let i = 0; i < 3; i++) {
+      const a = -Math.PI / 2 + i * 2 * Math.PI / 3;
+      ctx.beginPath(); ctx.moveTo(c, c * 0.8);
+      ctx.lineTo(c + Math.cos(a) * s * 0.42, c * 0.8 + Math.sin(a) * s * 0.42); ctx.stroke();
+    }
+    ctx.beginPath(); ctx.arc(c, c * 0.8, s * 0.09, 0, 2 * Math.PI); ctx.fill();
+  } else if (kind === "hydro") {
+    ctx.moveTo(c, s * 0.06);
+    ctx.bezierCurveTo(c + s * 0.12, s * 0.3, c + s * 0.36, s * 0.48, c + s * 0.36, s * 0.64);
+    ctx.arc(c, s * 0.64, s * 0.36, 0, Math.PI);
+    ctx.bezierCurveTo(c - s * 0.36, s * 0.48, c - s * 0.12, s * 0.3, c, s * 0.06);
+    ctx.fill();
+  } else if (kind === "solar") {
+    ctx.arc(c, c, s * 0.2, 0, 2 * Math.PI); ctx.fill();
+    ctx.lineWidth = s * 0.08; ctx.lineCap = "round";
+    for (let i = 0; i < 8; i++) {
+      const a = i * Math.PI / 4;
+      ctx.beginPath(); ctx.moveTo(c + Math.cos(a) * s * 0.3, c + Math.sin(a) * s * 0.3);
+      ctx.lineTo(c + Math.cos(a) * s * 0.45, c + Math.sin(a) * s * 0.45); ctx.stroke();
+    }
+  } else if (kind === "gas") {
+    ctx.moveTo(c, s * 0.05);
+    ctx.bezierCurveTo(c + s * 0.45, s * 0.4, c + s * 0.38, s * 0.95, c, s * 0.95);
+    ctx.bezierCurveTo(c - s * 0.38, s * 0.95, c - s * 0.42, s * 0.55, c - s * 0.12, s * 0.35);
+    ctx.bezierCurveTo(c - s * 0.1, s * 0.5, c - s * 0.02, s * 0.55, c + s * 0.02, s * 0.5);
+    ctx.bezierCurveTo(c + s * 0.05, s * 0.35, c - s * 0.05, s * 0.2, c, s * 0.05);
+    ctx.fill();
+  } else if (kind === "battery") {
+    ctx.fillRect(s * 0.12, s * 0.28, s * 0.68, s * 0.44);
+    ctx.fillRect(s * 0.8, s * 0.4, s * 0.1, s * 0.2);
+  } else if (kind === "nuclear") {
+    for (let i = 0; i < 3; i++) {
+      const a = -Math.PI / 2 + i * 2 * Math.PI / 3;
+      ctx.beginPath(); ctx.moveTo(c, c);
+      ctx.arc(c, c, s * 0.45, a - 0.5, a + 0.5); ctx.closePath(); ctx.fill();
+    }
+    ctx.beginPath(); ctx.arc(c, c, s * 0.1, 0, 2 * Math.PI); ctx.fill();
+  } else {
+    ctx.fillRect(s * 0.2, s * 0.2, s * 0.6, s * 0.6);
+  }
+}
+
+function legendIcon(kind, color) {
+  const cv = document.createElement("canvas");
+  cv.width = cv.height = 36; cv.className = "icon";
+  const ctx = cv.getContext("2d");
+  drawIcon(ctx, kind, 36);
+  ctx.globalCompositeOperation = "source-in"; ctx.fillStyle = color; ctx.fillRect(0, 0, 36, 36);
+  return cv;
+}
+
+// ---------- Panel
+const ownersEl = document.getElementById("owners");
+for (const [key, color, label] of OWNERS) {
+  const d = document.createElement("div");
+  if (key === "Avangrid") d.className = "av";
+  d.innerHTML = `<span class="swatch" style="background:${color}"></span>${label}`;
+  ownersEl.appendChild(d);
+}
+const typesEl = document.getElementById("types");
+for (const [kind, label] of TYPES) {
+  const l = document.createElement("label"); l.className = "row";
+  l.innerHTML = `<input type="checkbox" data-kind="${kind}" checked>`;
+  l.appendChild(legendIcon(kind, "#55595f"));
+  l.append(label);
+  const n = document.createElement("span"); n.className = "note"; n.id = `mw-${kind}`; l.appendChild(n);
+  typesEl.appendChild(l);
+}
+const voltEl = document.getElementById("voltages");
+for (const [vc, label, color, width, on] of VOLTS) {
+  const l = document.createElement("label"); l.className = "row";
+  const dash = vc === "DC" ? "dashed" : "solid";
+  l.innerHTML = `<input type="checkbox" data-vc="${vc}" ${on ? "checked" : ""}>
+    <span class="lineswatch" style="border-top:${Math.max(width, 1.5)}px ${dash} ${color}"></span>${label}`;
+  voltEl.appendChild(l);
+}
+document.getElementById("toggle").onclick = () => document.getElementById("panel").classList.toggle("closed");
+if (window.matchMedia("(max-width: 700px)").matches) document.getElementById("panel").classList.add("closed");
+
+// ---------- Map
+const map = new maplibregl.Map({
+  container: "map",
+  bounds: [[-124.9, 41.9], [-116.4, 49.1]],
+  fitBoundsOptions: { padding: window.innerWidth > 700
+    ? { top: 30, bottom: 70, left: 360, right: 30 }
+    : { top: 20, bottom: 130, left: 10, right: 10 } },  // phones: leave room for the bottom sheet
+  maxBounds: [[-130, 39], [-111, 51.5]],
+  attributionControl: { compact: true },
+  style: {
+    version: 8,
+    glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
+    sources: {
+      dem: {
+        type: "raster-dem", encoding: "terrarium", tileSize: 256, maxzoom: 12,
+        tiles: ["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"],
+        attribution: "Terrain: <a href='https://registry.opendata.aws/terrain-tiles/'>AWS Terrain Tiles</a> (USGS and others)",
+      },
+    },
+    layers: [
+      { id: "land", type: "background", paint: { "background-color": "#f4f1ea" } },
+      { id: "hillshade", type: "hillshade", source: "dem",
+        paint: { "hillshade-shadow-color": "#8a8478", "hillshade-highlight-color": "#ffffff",
+                 "hillshade-accent-color": "#9b9488", "hillshade-exaggeration": 0.45 } },
+    ],
+  },
+});
+map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+// Redraw at the right size if the page loads hidden or in a frame that resizes.
+new ResizeObserver(() => map.resize()).observe(document.getElementById("map"));
+map.addControl(new maplibregl.ScaleControl({ unit: "imperial" }), "bottom-right");
+
+const fmt = (n) => Math.round(n).toLocaleString("en-US");
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+
+// Start downloading the data right away, in parallel with the map style.
+const names = ["ocean", "lakes", "rivers", "borders", "outside", "counties", "cascade_split",
+               "cities", "plants", "lines", "dc_exit", "substations"];
+const dataReady = Promise.all(names.map(async (n) =>
+  [n, await (await fetch(`data/${n}.geojson`)).json()])).then(Object.fromEntries);
+
+// Add layers as soon as the style is ready. Waiting for "load" would also wait
+// for every terrain tile, which leaves the map empty for several seconds.
+map.once("style.load", async () => {
+  // Icons
+  for (const [kind] of TYPES) {
+    const cv = document.createElement("canvas"); cv.width = cv.height = 64;
+    const ctx = cv.getContext("2d"); drawIcon(ctx, kind, 64);
+    map.addImage(kind, ctx.getImageData(0, 0, 64, 64), { sdf: true, pixelRatio: 2 });
+  }
+  const data = await dataReady;
+  for (const n of names) map.addSource(n, { type: "geojson", data: data[n] });
+
+  // Type icon for each plant, used by the layer and the filters.
+  const typeToKind = {};
+  for (const [kind, , types] of TYPES) for (const t of types) typeToKind[t] = kind;
+  for (const f of data.plants.features) f.properties.kind = typeToKind[f.properties.type] || "other";
+  map.getSource("plants").setData(data.plants);
+  const mwBy = {};
+  for (const f of data.plants.features) mwBy[f.properties.kind] = (mwBy[f.properties.kind] || 0) + f.properties.mw;
+  for (const [kind] of TYPES) document.getElementById(`mw-${kind}`).textContent = `${fmt(mwBy[kind] || 0)} MW`;
+
+  const ownerColor = ["match", ["get", "group"], ...OWNERS.flatMap(([k, c]) => [k, c]).slice(0, -2), OWNERS.at(-1)[1]];
+  const lineColor = ["match", ["get", "vc"], ...VOLTS.flatMap(([vc, , c]) => [vc, c]), "#aeb1bd"];
+  const lineWidth = ["match", ["get", "vc"], ...VOLTS.flatMap(([vc, , , w]) => [vc, w]), 0.6];
+
+  map.addLayer({ id: "pop", type: "fill", source: "counties", layout: { visibility: "none" },
+    paint: { "fill-color": ["interpolate", ["linear"], ["log10", ["max", ["get", "density"], 1]],
+                            0, "#fbf3e4", 1, "#f3d9a6", 2, "#e3a565", 3, "#c4683a", 3.7, "#8e3b1f"],
+             "fill-opacity": 0.55 } });
+  map.addLayer({ id: "outside", type: "fill", source: "outside", paint: { "fill-color": "#ffffff", "fill-opacity": 0.45 } });
+  map.addLayer({ id: "ocean", type: "fill", source: "ocean", paint: { "fill-color": "#cfe0ea" } });
+  map.addLayer({ id: "lakes", type: "fill", source: "lakes", paint: { "fill-color": "#cfe0ea" } });
+  map.addLayer({ id: "rivers", type: "line", source: "rivers",
+    paint: { "line-color": "#8fb6cf", "line-width": ["case", ["get", "main"], 2.2, 0.9] } });
+  map.addLayer({ id: "borders", type: "line", source: "borders",
+    paint: { "line-color": "#8a8f96", "line-width": 1, "line-dasharray": [3, 2] } });
+  map.addLayer({ id: "split", type: "line", source: "cascade_split",
+    paint: { "line-color": "#a0522d", "line-width": 1.6, "line-dasharray": [1, 2], "line-opacity": 0.8 } });
+
+  map.addLayer({ id: "lines", type: "line", source: "lines",
+    filter: ["in", ["get", "vc"], ["literal", VOLTS.filter((v) => v[4]).map((v) => v[0])]],
+    layout: { "line-cap": "round", "line-join": "round" },
+    paint: { "line-color": lineColor,
+             "line-width": ["interpolate", ["linear"], ["zoom"], 5, ["*", lineWidth, 0.8], 9, ["*", lineWidth, 1.6]],
+             "line-opacity": 0.85 } });
+  // DC drawn on top, dashed, so it can't be mistaken for AC.
+  map.addLayer({ id: "dc", type: "line", source: "lines", filter: ["==", ["get", "cur"], "DC"],
+    paint: { "line-color": "#7b2cbf", "line-width": ["interpolate", ["linear"], ["zoom"], 5, 2.8, 9, 5],
+             "line-dasharray": [2, 1.2] } });
+  map.addLayer({ id: "line-hit", type: "line", source: "lines", filter: ["==", ["get", "cur"], "none"],
+    paint: { "line-width": 10, "line-opacity": 0 } });
+
+  map.addLayer({ id: "substations", type: "circle", source: "substations",
+    filter: [">=", ["get", "kv"], 500],
+    paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 5, 2.5, 10, 5],
+             "circle-color": "#ffffff", "circle-stroke-color": "#2b2d42", "circle-stroke-width": 1.4 } });
+
+  map.addLayer({ id: "plants", type: "symbol", source: "plants",
+    layout: { "icon-image": ["get", "kind"], "icon-allow-overlap": true, "icon-ignore-placement": true,
+              "icon-size": ["interpolate", ["linear"], ["sqrt", ["get", "mw"]], 1, 0.3, 5, 0.5, 10, 0.75, 30, 1.15, 80, 1.9] },
+    paint: { "icon-color": ownerColor, "icon-halo-color": "rgba(255,255,255,0.95)", "icon-halo-width": 1.6,
+             "icon-opacity": ["case", ["==", ["get", "group"], "Other"], 0.7, 1] } });
+
+  map.addLayer({ id: "cities", type: "symbol", source: "cities",
+    layout: { "text-field": ["get", "name"], "text-font": ["Noto Sans Bold"],
+              "text-size": ["case", ["get", "big"], 15, 11.5], "text-anchor": "left", "text-offset": [0.6, 0],
+              "symbol-sort-key": ["-", 0, ["get", "pop_max"]] },
+    paint: { "text-color": "#1f2328", "text-halo-color": "#ffffff", "text-halo-width": 1.8 } });
+  map.addLayer({ id: "city-dots", type: "circle", source: "cities",
+    paint: { "circle-radius": ["case", ["get", "big"], 4.5, 2.8], "circle-color": "#1f2328",
+             "circle-stroke-color": "#fff", "circle-stroke-width": 1.2 } }, "cities");
+
+  map.addLayer({ id: "dc-exit", type: "symbol", source: "dc_exit",
+    layout: { "text-field": ["concat", "↓ ", ["get", "label"]], "text-font": ["Noto Sans Bold"],
+              "text-size": 12.5, "text-anchor": "top-left", "text-offset": [0.4, 0.4], "text-max-width": 11 },
+    paint: { "text-color": "#7b2cbf", "text-halo-color": "#ffffff", "text-halo-width": 2 } });
+
+  // A few place labels for the landscape.
+  map.addSource("landmarks", { type: "geojson", data: { type: "FeatureCollection", features: [
+    { type: "Feature", properties: { t: "C A S C A D E   R A N G E", r: 82 }, geometry: { type: "Point", coordinates: [-121.75, 45.9] } },
+    { type: "Feature", properties: { t: "Columbia River", r: -20 }, geometry: { type: "Point", coordinates: [-123.35, 46.12] } },
+  ] } });
+  map.addLayer({ id: "landmarks", type: "symbol", source: "landmarks",
+    layout: { "text-field": ["get", "t"], "text-font": ["Noto Sans Regular"], "text-size": 12,
+              "text-rotate": ["get", "r"], "text-allow-overlap": true },
+    paint: { "text-color": "#6b5b45", "text-halo-color": "rgba(255,255,255,0.8)", "text-halo-width": 1.5 } });
+
+  // ---------- Filters
+  function applyFilters() {
+    const kinds = [...document.querySelectorAll("#types input:checked")].map((i) => i.dataset.kind);
+    map.setFilter("plants", ["in", ["get", "kind"], ["literal", kinds]]);
+    const vcs = [...document.querySelectorAll("#voltages input:checked")].map((i) => i.dataset.vc);
+    const ac = vcs.filter((v) => v !== "DC");
+    map.setFilter("lines", ["all", ["==", ["get", "cur"], "AC"], ["in", ["get", "vc"], ["literal", ac]]]);
+    map.setLayoutProperty("dc", "visibility", vcs.includes("DC") ? "visible" : "none");
+    map.setLayoutProperty("dc-exit", "visibility", vcs.includes("DC") ? "visible" : "none");
+    map.setFilter("line-hit", ["in", ["get", "vc"], ["literal", vcs]]);
+    const minKv = Math.min(...VOLTS.filter((v) => vcs.includes(v[0])).map((v) => v[5]), 999);
+    map.setFilter("substations", [">=", ["get", "kv"], Math.max(minKv, 230)]);
+    map.setLayoutProperty("substations", "visibility",
+      document.getElementById("subs").checked && vcs.length ? "visible" : "none");
+    map.setLayoutProperty("split", "visibility", document.getElementById("split").checked ? "visible" : "none");
+    map.setLayoutProperty("pop", "visibility", document.getElementById("pop").checked ? "visible" : "none");
+  }
+  document.getElementById("panel").addEventListener("change", applyFilters);
+  applyFilters();
+
+  // ---------- Popups
+  const popup = (lngLat, html) => new maplibregl.Popup({ closeButton: true, maxWidth: "290px" })
+    .setLngLat(lngLat).setHTML(html).addTo(map);
+  map.on("click", "plants", (e) => {
+    const p = e.features[0].properties;
+    popup(e.lngLat, `<h3>${esc(p.name)}</h3>
+      ${esc(p.type)} · <b>${fmt(p.mw)} MW</b><br>
+      <span class="k">Owner:</span> ${esc(p.owners)}<br>
+      <span class="k">Operator:</span> ${esc(p.operator)}<br>
+      <span class="k">Online:</span> ${esc(p.year)}<br>
+      <span class="k">Where:</span> ${esc(p.county)} County, ${esc(p.state)} (${esc(p.side).toLowerCase()} side)`);
+  });
+  map.on("click", "line-hit", (e) => {
+    if (map.queryRenderedFeatures(e.point, { layers: ["plants", "substations"] }).length) return;
+    const p = e.features[0].properties;
+    const v = p.cur === "DC" ? "±500 kV DC" : (p.kv ? `${fmt(p.kv)} kV AC` : `${p.vc} kV AC`);
+    const ends = [p.sub_1, p.sub_2].filter((s) => s && !/NOT AVAILABLE|UNKNOWN|TAP/.test(s));
+    popup(e.lngLat, `<h3>${esc(p.name || v)}</h3>${p.name ? esc(v) + "<br>" : ""}
+      <span class="k">Owner:</span> ${esc(p.owner)}<br>
+      ${ends.length ? `<span class="k">Between:</span> ${ends.map(esc).join(" and ")}<br>` : ""}
+      <span class="k">Source:</span> ${esc(p.src)}`);
+  });
+  map.on("click", "substations", (e) => {
+    const p = e.features[0].properties;
+    popup(e.lngLat, `<h3>${esc(p.name || "Unnamed substation")}</h3>
+      Up to ${fmt(p.kv)} kV<br><span class="k">Operator:</span> ${esc(p.operator || "not listed")}<br>
+      <span class="k">Source:</span> OpenStreetMap`);
+  });
+  map.on("click", "pop", (e) => {
+    if (map.queryRenderedFeatures(e.point, { layers: ["plants", "substations", "line-hit"] }).length) return;
+    const p = e.features[0].properties;
+    popup(e.lngLat, `<h3>${esc(p.name)}</h3>${fmt(p.pop)} people (2025)<br>${fmt(p.density)} per square mile<br>${esc(p.side)} of the Cascades`);
+  });
+  for (const id of ["plants", "line-hit", "substations"]) {
+    map.on("mouseenter", id, () => (map.getCanvas().style.cursor = "pointer"));
+    map.on("mouseleave", id, () => (map.getCanvas().style.cursor = ""));
+  }
+  window.__mapReady = true;
+});
+</script>
+</body>
+</html>
