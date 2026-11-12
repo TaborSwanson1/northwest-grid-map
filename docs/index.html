@@ -305,10 +305,21 @@ function setLimits() {
   map.setMinZoom(minZoom);
   map.setMaxBounds([[xToLng(cx - hw), yToLat(cy + hh)], [xToLng(cx + hw), yToLat(cy - hh)]]);
 }
+// Starting view. If the page loads before the map has a size, the first fit fails and
+// the map opens fully zoomed in. So refit whenever the size changes, until the user moves.
+let userMoved = false;
+map.on("movestart", (e) => { if (e.originalEvent) userMoved = true; });
+function fitStart() {
+  if (userMoved) return;
+  const cam = map.cameraForBounds(ORWA, { padding: viewPadding() })
+           || map.cameraForBounds(ORWA, { padding: 24 });
+  if (cam) map.jumpTo(cam);
+}
 setLimits();
-map.once("style.load", setLimits);
+fitStart();
+map.once("style.load", () => { setLimits(); fitStart(); });
 // Redraw at the right size if the page loads hidden or in a frame that resizes.
-new ResizeObserver(() => { map.resize(); setLimits(); }).observe(document.getElementById("map"));
+new ResizeObserver(() => { map.resize(); setLimits(); fitStart(); }).observe(document.getElementById("map"));
 window.addEventListener("resize", setLimits);
 map.addControl(new maplibregl.ScaleControl({ unit: "imperial" }), "bottom-right");
 
